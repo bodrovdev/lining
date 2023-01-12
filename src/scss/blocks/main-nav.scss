@@ -154,7 +154,7 @@
     @include mixins.respond-to(mobileOnly) {
       justify-content: space-between;
 
-      padding: 10px 0 0 0;
+      padding: 26px 0 0 0;
     }
 
     & .main-button {
@@ -212,7 +212,7 @@
   &__nav-menu--mobile {
     @include mixins.respond-to(mobileOnly) {
       position: absolute;
-      top: 54px;
+      top: 86px;
       left: 0;
 
       display: flex;
@@ -229,7 +229,9 @@
       transform: translateX(-100%);
       transition: transform 0.4s cubic-bezier(0.37, 0, 0.63, 1);
 
-      padding: 20px 5% 0 5%
+      padding: 20px 5% 0 5%;
+
+      z-index: 100;
     }
     @include mixins.respond-to(tabletOnly) {
       position: absolute;
@@ -340,6 +342,14 @@
           margin: 0;
         }
       }
+    }
+
+    @include mixins.respond-to(mobileOnly) {
+      display: flex;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      display: none;
     }
   }
 

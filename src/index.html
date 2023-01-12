@@ -1,3 +1,39 @@
 @@include('components/_base/_base-header.html')
-	<main class="page-content"></main>
+	<main class="page-content">
+		<section class="index-heading">
+			<div class="index-heading__container base-container">
+				<div class="index-heading__cover-img"></div>
+
+				<style>
+					.index-heading__cover-img {
+						background-image: url('../img/image/index-heading.jpg');
+					}
+
+					@media only screen
+						and (min-device-width: 320px)
+						and (max-device-width: 1023px) {
+							.index-heading__cover-img {
+								background-image: url('../img/image/index-heading-mobile.jpg');
+								background-size: 100%;
+							}
+						}
+				</style>
+
+				<div class="index-heading__info">
+					<h1 class="index-heading__info-title base-title">РЕВОЛЮЦИОННЫЕ ФАСАДНЫЕ ТЕРМОПАНЕЛИ </h1>
+					<p class="index-heading__info-text base-par">
+						Самое экономичное и эффективное утепление 
+						фасада без лишних затрат от <span class="index-heading__text-decor"><b>1500</b></span> <b>1400</b> руб!
+					</p>
+					<div class="index-heading__link-block">
+						@@include('components/_bem/_main-button.html', {
+							"href": "#",
+							"text": "Сделать расчёт",
+							})
+						<a class="index-heading__about-link blue-hover base-link" href="#">О компании</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 @@include('components/_base/_base-footer.html')

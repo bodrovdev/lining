@@ -1,0 +1,142 @@
+@use "../mixins";
+
+.index-heading {
+  min-height: 515px;
+  overflow: hidden;
+
+  margin: 40px 0 0 0;
+
+  @include mixins.respond-to(mobileOnly) {
+    margin: 26px 0 0 0;
+  }
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 515px;
+
+    padding: 0 0 0 110px;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+
+      padding: 0;
+    }
+  }
+
+  &__cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1608px;
+    height: 515px;
+    background-repeat: no-repeat;
+    background-size: 1608px 515px;
+
+    z-index: 1;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+      
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    position: relative;
+
+    z-index: 2; 
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 90%;
+      
+      margin: 0 auto;
+    }
+  }
+
+  &__info-title {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 82px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    margin: 0 0 24px 0;
+
+    @include mixins.respond-to(mobileOnly) {
+      font-size: 34px;
+      line-height: 41px;
+    }
+  }
+
+  &__info-text {
+    display: inline-block;
+
+    max-width: 640px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    color: #FFFFFF;
+
+    margin: 0 0 24px 0;
+
+    @include mixins.respond-to(mobileOnly) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &__text-decor {
+    text-decoration: line-through;
+  }
+
+  &__link-block {
+    display: flex;
+    align-items: center;
+
+    & .main-button {
+      margin: 0 28px 0 0;
+
+      @include mixins.respond-to(mobileOnly) {
+        width: 100%;
+
+        margin: 0 0 10px 0;
+      }
+    }
+
+    @include mixins.respond-to(mobileOnly) {
+      flex-direction: column;
+    }
+  }
+
+  &__about-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 249px;
+    height: 59px;
+    border: 1px solid var(--color-white);
+    box-sizing: border-box;
+
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-white);
+
+    padding: 20px 62px;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+    }
+  }
+}
