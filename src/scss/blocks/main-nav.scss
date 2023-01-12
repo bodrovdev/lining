@@ -80,24 +80,90 @@
 
 // Стили
 .main-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
   width: 100%;
-  height: 90px;
-  border-bottom: 1px solid darkblue;
+  // height: 90px;
 
   &__nav-wrapper {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
     height: 100%
   }
 
-  &__container {
+  &__nav-top {
+    height: 80px;
+    background-color: var(--color-tundora);
+
+    margin: 0 0 25px 0;
+
+    @include mixins.respond-to(mobileOnly) {
+      display: none;
+    }
+  }
+
+  &__top-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     height: 100%
+  }
+
+  &__top-work, .main-nav__top-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__top-item-icon {
+    margin: 0 5px 0 0;
+  }
+  
+  &__top-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--color-white);
+  }
+
+  &__top-contacts {
+    display: flex;
+  }
+
+  &__top-link {
+    margin: 0 35px 0 0;
+
+    &::last-child {
+      margin: 0;
+    }
+  }
+
+  &__nav-container {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    height: 100%;
+
+    @include mixins.respond-to(mobileOnly) {
+      justify-content: space-between;
+
+      padding: 10px 0 0 0;
+    }
+
+    & .main-button {
+      margin: 0 0 0 auto;
+
+      @include mixins.respond-to(mobileOnly) {
+        margin: 20px 0 0 0;
+      }
+    }
   }
 
   &__logo-link {
@@ -107,9 +173,18 @@
     align-items: center;
     justify-content: center;
 
-    font-family: 'Geneva', 'sans-serif';
-    font-size: 30px;
-    color: darkblue
+    transition: transform 0.1s;
+
+    @include mixins.respond-to(desktopS) {
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s;
+      }
+    }
+ 
+    @include mixins.respond-to(desktopM) {
+      margin: 0 90px 0 0;
+    }
   }
 
   &__logo-image {
@@ -119,41 +194,59 @@
 
   &__logo-img {
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 150px;
+      height: auto;
+    }
   }
 
   &__nav-menu {
     display: flex;
-    align-items: center
+    align-items: center;
+
+    width: 100%;
   }
 
   &__nav-menu--mobile {
     @include mixins.respond-to(mobileOnly) {
       position: absolute;
-      top: 90px;
+      top: 54px;
       left: 0;
+
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       width: 100vw;
-      height: 100vh;
-      background-color: darkblue;
+      height: calc(100vh - 54px);
+      background-color: var(--color-wedgewood);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-y: contain;
+
       transform: translateX(-100%);
       transition: transform 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+
       padding: 20px 5% 0 5%
     }
     @include mixins.respond-to(tabletOnly) {
       position: absolute;
       top: 50px;
       left: 0;
+
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      
       width: 100vw;
       height: 100vh;
-      background-color: darkblue;
+      background-color: var(--color-wedgewood);
+
       transform: translateX(-100%);
       transition: transform 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+
       padding: 20px 5% 0 5%
     }
   }
@@ -166,13 +259,20 @@
       width: 100%
     }
     @include mixins.respond-to(desktopS) {
-      display: flex
+      display: flex;
+
+      margin: 0 10px 0 0;
     }
   }
 
   &__nav-item {
+    display: inline-block;
+    
+    height: fit-content;
+
     @include mixins.respond-to(mobileOnly) {
       width: 100%;
+
       margin: 0 0 20px 0;
 
       &:last-child {
@@ -181,6 +281,7 @@
     }
     @include mixins.respond-to(tabletOnly) {
       width: 100%;
+
       margin: 0 0 20px 0;
 
       &:last-child {
@@ -197,25 +298,16 @@
   }
 
   &__nav-link {
+    vertical-align: top;
+
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: var(--color-black);
+
     @include mixins.respond-to(mobileOnly) {
-      display: inline-block;
-      width: 100%;
-      font-family: 'Geneva', 'sans-serif';
-      font-size: 20px;
-      color: var(--color-white)
-    }
-    @include mixins.respond-to(tabletOnly) {
-      display: inline-block;
-      width: 100%;
-      font-family: 'Geneva', 'sans-serif';
-      font-size: 20px;
-      color: var(--color-white)
-    }
-    @include mixins.respond-to(desktopS) {
-      display: inline-block;
-      font-family: 'Geneva', 'sans-serif';
-      font-size: 16px;
-      color: darkblue
+      color: var(--color-white);
     }
   }
 
@@ -224,53 +316,29 @@
     transition: transform 0.4s cubic-bezier(0.37, 0, 0.63, 1)
   }
 
-  &__nav-linkset {
+  &__nav-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 
-    margin: 0 0 0 35px;
+    margin: 20px 0 0 0;
 
-    @include mixins.respond-to(mobileOnly) {
-      margin: 40px 0 0 0
-    }
-  }
-
-  &__linkset-item {
-    position: relative;
-
-    display: inline-block;
-
-    font-family: 'Geneva', 'sans-serif';
-    font-size: 16px;
-    color: darkblue;
-
-    padding: 0 0 0 20px;
-    margin: 0 0 5px 0;
-
-    @include mixins.respond-to(mobileOnly) {
-      color: var(--color-white)
+    & .main-nav__top-work br {
+      display: none;
     }
 
-    &:last-child {
-      margin: 0
-    }
+    & .main-nav__top-contacts {
+      flex-direction: column;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
+      margin: 20px 0 0 0;
 
-      width: 10px;
-      height: 10px;
-      background-color: darkblue;
-      border-radius: 50%;
+      & .main-nav__top-link {
+        margin: 0 0 20px 0;
 
-      transform: translateY(-50%);
-
-      @include mixins.respond-to(mobileOnly) {
-        background-color: white
+        &:last-child {
+          margin: 0;
+        }
       }
     }
   }
@@ -302,7 +370,7 @@
 
     width: 100%;
     height: 2px;
-    background-color: darkblue;
+    background-color: var(--color-wedgewood);
 
     transition: background-color 0.1s;
 
@@ -315,7 +383,7 @@
 
       width: 100%;
       height: 2px;
-      background-color: darkblue;
+      background-color: var(--color-wedgewood);
 
       animation-duration: 0.4s;
       animation-name: burger_before_default;
@@ -333,7 +401,7 @@
 
       width: 100%;
       height: 2px;
-      background-color: darkblue;
+      background-color: var(--color-wedgewood);
 
       animation-duration: 0.4s;
       animation-name: burger_after_default;

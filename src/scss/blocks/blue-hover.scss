@@ -1,0 +1,43 @@
+@use "../mixins";
+
+.blue-hover {
+  position: relative;
+
+  display: inline-block;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: color 0.3s;
+
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    // background-color: var(--color-wedgewood);
+    background-color: var(--color-fountain-blue);
+
+    transform: translateX(-101%);
+    transition: transform 0.3s;
+
+    z-index: -1;
+  }
+
+  @include mixins.respond-to(desktopS) {
+    &:hover {
+      // color: var(--color-white);
+      
+      // transition: color;
+    }
+    &:hover::before {
+      transform: translateX(0);
+      transition: transform 0.3s;
+    }
+  }
+}

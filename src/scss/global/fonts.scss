@@ -1,3 +1,8 @@
 @use "../mixins";
 
-@include mixins.font-face(Arial, normal, 400);
+@include mixins.font-face(Ruda, normal, 400);
+@include mixins.font-face(Ruda, normal, 700);
+@include mixins.font-face(Ruda, normal, 900);
+
+@include mixins.font-face(Circe, normal, 400);
+@include mixins.font-face(Circe, normal, 700);
