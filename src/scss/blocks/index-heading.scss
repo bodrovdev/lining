@@ -10,6 +10,10 @@
     margin: 26px 0 0 0;
   }
 
+  @include mixins.respond-to(tabletOnly) {
+    margin: 26px 0 0 0;
+  }
+
   &__container {
     position: relative;
 
@@ -21,6 +25,12 @@
     padding: 0 0 0 110px;
 
     @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+
+      padding: 0;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       width: 100%;
 
       padding: 0;
@@ -44,6 +54,12 @@
       
       margin: 0 auto;
     }
+
+    @include mixins.respond-to(tabletOnly) {
+      width: 100%;
+      
+      margin: 0 auto;
+    }
   }
 
   &__info {
@@ -52,6 +68,12 @@
     z-index: 2; 
 
     @include mixins.respond-to(mobileOnly) {
+      width: 90%;
+      
+      margin: 0 auto;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       width: 90%;
       
       margin: 0 auto;
@@ -70,8 +92,28 @@
     margin: 0 0 24px 0;
 
     @include mixins.respond-to(mobileOnly) {
+      line-height: 41px;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       font-size: 34px;
       line-height: 41px;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 0)
+  and (max-device-width: 374px) {
+    &__info-title {
+      font-size: 28px;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 767px) {
+    &__info-title {
+      font-size: 34px;
     }
   }
 
@@ -88,6 +130,11 @@
     margin: 0 0 24px 0;
 
     @include mixins.respond-to(mobileOnly) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       font-size: 18px;
       line-height: 27px;
     }
@@ -109,9 +156,19 @@
 
         margin: 0 0 10px 0;
       }
+
+      @include mixins.respond-to(tabletOnly) {
+        width: 100%;
+
+        margin: 0 0 10px 0;
+      }
     }
 
     @include mixins.respond-to(mobileOnly) {
+      flex-direction: column;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       flex-direction: column;
     }
   }
@@ -136,6 +193,10 @@
     padding: 20px 62px;
 
     @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       width: 100%;
     }
   }

@@ -1,0 +1,14 @@
+@use "../mixins";
+
+.section-title {
+  font-family: var(--font-family-title);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 55px;
+  color: var(--color-black);
+
+  @include mixins.respond-to(mobileOnly) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}

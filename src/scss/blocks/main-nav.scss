@@ -139,7 +139,7 @@
   &__top-link {
     margin: 0 35px 0 0;
 
-    &::last-child {
+    &:last-child {
       margin: 0;
     }
   }
@@ -147,7 +147,6 @@
   &__nav-container {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
 
     height: 100%;
 
@@ -157,10 +156,18 @@
       padding: 26px 0 0 0;
     }
 
+    @include mixins.respond-to(tabletOnly) {
+      justify-content: space-between;
+    }
+
     & .main-button {
       margin: 0 0 0 auto;
 
       @include mixins.respond-to(mobileOnly) {
+        margin: 20px 0 0 0;
+      }
+
+      @include mixins.respond-to(tabletOnly) {
         margin: 20px 0 0 0;
       }
     }
@@ -176,6 +183,8 @@
     transition: transform 0.1s;
 
     @include mixins.respond-to(desktopS) {
+      margin: 0 20px 0 0;
+
       &:hover {
         transform: scale(1.1);
         transition: transform 0.1s;
@@ -235,7 +244,7 @@
     }
     @include mixins.respond-to(tabletOnly) {
       position: absolute;
-      top: 50px;
+      top: 185px;
       left: 0;
 
       display: flex;
@@ -249,7 +258,9 @@
       transform: translateX(-100%);
       transition: transform 0.4s cubic-bezier(0.37, 0, 0.63, 1);
 
-      padding: 20px 5% 0 5%
+      padding: 20px 5% 0 5%;
+
+      z-index: 100;
     }
   }
 
@@ -272,30 +283,25 @@
     
     height: fit-content;
 
+    &:last-child {
+      margin: 0
+    }
+
     @include mixins.respond-to(mobileOnly) {
       width: 100%;
 
       margin: 0 0 20px 0;
-
-      &:last-child {
-        margin: 0
-      }
     }
     @include mixins.respond-to(tabletOnly) {
       width: 100%;
 
-      margin: 0 0 20px 0;
-
-      &:last-child {
-        margin: 0
-      }
+      margin: 0 0 30px 0;
     }
     @include mixins.respond-to(desktopS) {
-      margin: 0 30px 0 0;
-
-      &:last-child {
-        margin: 0
-      }
+      margin: 0 15px 0 0;
+    }
+    @include mixins.respond-to(desktopM) {
+      margin: 0 50px 0 0;
     }
   }
 
@@ -310,6 +316,10 @@
 
     @include mixins.respond-to(mobileOnly) {
       color: var(--color-white);
+    }
+    
+    @include mixins.respond-to(tabletOnly) {
+      font-size: 12px;
     }
   }
 
@@ -346,6 +356,10 @@
 
     @include mixins.respond-to(mobileOnly) {
       display: flex;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
+      display: none;
     }
 
     @include mixins.respond-to(desktopS) {
