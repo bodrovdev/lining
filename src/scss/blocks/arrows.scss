@@ -1,0 +1,30 @@
+@use "../mixins";
+
+.arrows {
+  display: flex;
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--color-black);
+    border-radius: 50px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+
+    transition: background 0.3s;
+
+    &:first-child {
+      margin: 0 30px 0 0;
+    }
+
+    &:hover {
+      background: var(--color-fountain-blue);
+      transition: background 0.3s;
+    }
+  }
+}
