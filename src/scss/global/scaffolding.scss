@@ -22,3 +22,57 @@ body {
 
   margin: 0;
 }
+
+.gdesc-inner {
+	position: relative;
+
+	overflow: hidden;
+
+	z-index: 1;
+	
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-fountain-blue);
+
+		transform: translateX(-100%);
+		transition: transform 0.5s;
+
+		z-index: 1;
+	}
+
+	&:hover::before {
+		transform: translateX(0);
+		transition: transform 0.5s;
+	}
+}
+
+.gslide-title {
+	position: relative !important;
+
+	font-family: var(--font-family-default) !important;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	line-height: 21px !important;
+
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+
+	z-index: 2 !important;
+}
+
+.gslide-desc {
+	position: relative !important;
+
+	font-family: var(--font-family-default) !important;
+	font-weight: 400 !important;
+	font-size: 20px !important;
+	line-height: 26px !important;
+
+	z-index: 2 !important;
+}

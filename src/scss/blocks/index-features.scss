@@ -16,11 +16,20 @@
 
   &__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
 
     @include mixins.respond-to(mobileOnly) {
       flex-direction: column;
+    }
+
+    @include mixins.respond-to(tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
 
@@ -62,7 +71,8 @@
       }
     }
 
-    @include mixins.respond-to(desktopS) {
+    @include mixins.respond-to(tablet) {
+
       @keyframes featureAnim {
         0% {
           transform: translateX(-170px);
@@ -96,12 +106,38 @@
         }
       }
 
+      margin: 0 30px 0 0;
+
+      &:nth-child(1) {
+        margin: 0 30px 30px 0;
+      }
+      &:nth-child(2) {
+        margin: 0 30px 30px 0;
+      }
+
       &:hover::before {
         animation-name: featureAnim;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
         animation-duration: 0.5s;
       }
+    }
+
+    @include mixins.respond-to(desktopD) {
+      width: 250px;
+
+      margin: 0;
+
+      &:nth-child(1) {
+        margin: 0;
+      }
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
+
+    @include mixins.respond-to(desktopM) {
+      width: 300px;
     }
 
     &-image {
