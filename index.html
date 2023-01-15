@@ -117,6 +117,8 @@
 				<style>
 					.index-heading__cover-img {
 						background-image: url('../img/image/index-heading.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
 					}
 
 					@media only screen
@@ -124,7 +126,8 @@
 						and (max-device-width: 767px) {
 							.index-heading__cover-img {
 								background-image: url('../img/image/index-heading-mobile.jpg');
-								background-size: 100%;
+								background-size: cover;
+								background-repeat: no-repeat;
 							}
 						}
 				</style>
@@ -198,6 +201,22 @@
 		</section>
 
 		<section class="index-sampleForm">
+
+			<style>
+				.index-sampleForm {
+					background: url('../img/image/form-cover.jpg');
+					background-size: cover;
+  				background-repeat: no-repeat;
+				}
+				@media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
+					.index-sampleForm {
+						background: url('../img/image/form-cover-mobile.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+				}
+			</style>
+
 			<div class="index-sampleForm__container base-container">
 				<h2 class="index-sampleForm__title section-title base-title">
 					Хотите получить бесплатный образец?
@@ -205,13 +224,13 @@
 				<span class="index-sampleForm__subtitle">Предоставляем бесплатный образец панелей.</span>
 				<form class="index-sampleForm__form">
 					<div class="index-sampleForm__formset">
-						<input type="text" class="index-sampleForm__input" placeholder="Введите номер телефона">
+						<input type="tel" class="index-sampleForm__input" placeholder="Введите номер телефона" required>
 						<button class="index-sampleForm__submit main-button base-button">
 							<span class="index-sampleForm__submit-text main-button__text">Получить образец</span>
 						</button>
 					</div>
-					<label for="" class="index-sampleForm__checkbox-label">
-						<input class="index-sampleForm__checkbox" type="checkbox" checked>
+					<label class="index-sampleForm__checkbox-label" for="sampleFormCheckbox">
+						<input class="index-sampleForm__checkbox" type="checkbox" id="sampleFormCheckbox" checked required>
 						Отправляя форму, вы соглашаетесь с условиями обработки персональных данных.
 					</label>
 				</form>
@@ -229,41 +248,67 @@
 			<div class="index-colorSlider__slider-container">
 				<div class="index-colorSlider__slider swiper">
 					<div class="index-colorSlider__slider-wrapper swiper-wrapper">
+
 						<div class="index-colorSlider__slider-slide swiper-slide">
-							<figure class="index-colorSlider__slide-image base-figure">
-								<img class="index-colorSlider__slide-img" src="img/image/color-slider-1.jpg" alt="#">
-							</figure>
-							<span class="index-colorSlider__color-number">001</span>
-							<span class="index-colorSlider__color-name">Опал</span>
+							<div class="index-colorSlider__slide-content">
+								<figure class="index-colorSlider__slide-image base-figure">
+									<img class="index-colorSlider__slide-img" src="img/image/color-slider-1.jpg" alt="#">
+								</figure>
+								<div class="index-colorSlider__slide-bottom">
+									<span class="index-colorSlider__color-number">001</span>
+									<span class="index-colorSlider__color-name">Опал</span>
+								</div>
+							</div>
 						</div>
+
 						<div class="index-colorSlider__slider-slide swiper-slide">
-							<figure class="index-colorSlider__slide-image base-figure">
-								<img class="index-colorSlider__slide-img" src="img/image/color-slider-2.jpg" alt="#">
-							</figure>
-							<span class="index-colorSlider__color-number">001</span>
-							<span class="index-colorSlider__color-name">Опал</span>
+							<div class="index-colorSlider__slide-content">
+								<figure class="index-colorSlider__slide-image base-figure">
+									<img class="index-colorSlider__slide-img" src="img/image/color-slider-2.jpg" alt="#">
+								</figure>
+								<div class="index-colorSlider__slide-bottom">
+									<span class="index-colorSlider__color-number">001</span>
+									<span class="index-colorSlider__color-name">Опал</span>
+								</div>
+							</div>
 						</div>
+
 						<div class="index-colorSlider__slider-slide swiper-slide">
-							<figure class="index-colorSlider__slide-image base-figure">
-								<img class="index-colorSlider__slide-img" src="img/image/color-slider-3.jpg" alt="#">
-							</figure>
-							<span class="index-colorSlider__color-number">001</span>
-							<span class="index-colorSlider__color-name">Опал</span>
+							<div class="index-colorSlider__slide-content">
+								<figure class="index-colorSlider__slide-image base-figure">
+									<img class="index-colorSlider__slide-img" src="img/image/color-slider-3.jpg" alt="#">
+								</figure>
+								<div class="index-colorSlider__slide-bottom">
+									<span class="index-colorSlider__color-number">001</span>
+									<span class="index-colorSlider__color-name">Опал</span>
+								</div>
+							</div>
 						</div>
+
 						<div class="index-colorSlider__slider-slide swiper-slide">
-							<figure class="index-colorSlider__slide-image base-figure">
-								<img class="index-colorSlider__slide-img" src="img/image/color-slider-1.jpg" alt="#">
-							</figure>
-							<span class="index-colorSlider__color-number">001</span>
-							<span class="index-colorSlider__color-name">Опал</span>
+							<div class="index-colorSlider__slide-content">
+								<figure class="index-colorSlider__slide-image base-figure">
+									<img class="index-colorSlider__slide-img" src="img/image/color-slider-1.jpg" alt="#">
+								</figure>
+								<div class="index-colorSlider__slide-bottom">
+									<span class="index-colorSlider__color-number">001</span>
+									<span class="index-colorSlider__color-name">Опал</span>
+								</div>
+							</div>
 						</div>
+
 						<div class="index-colorSlider__slider-slide swiper-slide">
-							<figure class="index-colorSlider__slide-image base-figure">
-								<img class="index-colorSlider__slide-img" src="img/image/color-slider-2.jpg" alt="#">
-							</figure>
-							<span class="index-colorSlider__color-number">001</span>
-							<span class="index-colorSlider__color-name">Опал</span>
+							<div class="index-colorSlider__slide-content">
+								<figure class="index-colorSlider__slide-image base-figure">
+									<img class="index-colorSlider__slide-img" src="img/image/color-slider-2.jpg" alt="#">
+								</figure>
+								<div class="index-colorSlider__slide-bottom">
+									<span class="index-colorSlider__color-number">001</span>
+									<span class="index-colorSlider__color-name">Опал</span>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -287,26 +332,81 @@
 		</section>
 
 		<section class="index-projectSlider">
-			<div class="index-projectSlider__container base-container">
-				
+			<div class="index-projectSlider__container base-container">			
 			</div>
 			<div class="index-projectSlider__slider-container">
 				<div class="index-projectSlider__slider swiper">
 					<div class="index-projectSlider__slider-wrapper swiper-wrapper">
+
 						<div class="index-projectSlider__slider-slide swiper-slide">
 							<div class="index-projectSlider__slide-content">
 								<figure class="index-projectSlider__slide-image base-figure">
-									<img class="index-projectSlider__slide-img" src="" alt="">
+									<a class="glightbox" 
+											data-title="Облицовка дома"
+											data-description="Проект “Дымовая поэзия” Разработка фирменного стиля"
+											href="img/image/project-slider-2.jpg">
+										<img class="index-projectSlider__slide-img" src="img/image/project-slider-2.jpg" alt="">
+									</a>
 								</figure>
 								<div class="index-projectSlider__slide-info">
-									<span class="index-projectSlider__info-title"></span>
-									<span class="index-projectSlider__info-text"></span>
+									<span class="index-projectSlider__info-title">Облицовка дома</span>
+									<span class="index-projectSlider__info-text">Проект “Дымовая поэзия” Разработка фирменного стиля</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="index-projectSlider__slider-slide swiper-slide">
+							<div class="index-projectSlider__slide-content">
+								<figure class="index-projectSlider__slide-image base-figure">
+									<a class="glightbox" 
+											data-title="Облицовка дома"
+											data-description="Проект “Дымовая поэзия” Разработка фирменного стиля"
+											href="img/image/project-slider-1.jpg">
+										<img class="index-projectSlider__slide-img" src="img/image/project-slider-1.jpg" alt="">
+									</a>
+								</figure>
+								<div class="index-projectSlider__slide-info">
+									<span class="index-projectSlider__info-title">Облицовка дома</span>
+									<span class="index-projectSlider__info-text">Проект “Дымовая поэзия” Разработка фирменного стиля</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="index-projectSlider__slider-slide swiper-slide">
+							<div class="index-projectSlider__slide-content">
+								<figure class="index-projectSlider__slide-image base-figure">
+									<a class="glightbox" 
+											data-title="Облицовка дома"
+											data-description="Проект “Дымовая поэзия” Разработка фирменного стиля"
+											href="img/image/project-slider-3.jpg">
+										<img class="index-projectSlider__slide-img" src="img/image/project-slider-3.jpg" alt="">
+									</a>
+								</figure>
+								<div class="index-projectSlider__slide-info">
+									<span class="index-projectSlider__info-title">Облицовка дома</span>
+									<span class="index-projectSlider__info-text">Проект “Дымовая поэзия” Разработка фирменного стиля</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="index-projectSlider__arrows arrows">
+					<div class="index-projectSlider__arrow index-projectSlider__arrow--prev arrows__arrow arrows__arrow--prev">
+						<svg class="arrow-icon" width="16" height="16" alt="#">
+							<use href="img/icon/sprite.svg#arrow-icon"></use>
+						</svg>
+					</div>
+					<div class="index-projectSlider__arrow index-projectSlider__arrow--next arrows__arrow arrows__arrow-next">
+						<svg class="arrow-icon" width="16" height="16" alt="#" style="transform: rotate(-180deg);">
+							<use href="img/icon/sprite.svg#arrow-icon"></use>
+						</svg>
+					</div>
+				</div>
 			</div>
+		</section>
+
+		<section class="faq">
+			
 		</section>
 	</main>
     <footer class="page-footer"></footer>
