@@ -1,0 +1,95 @@
+@use "../mixins";
+
+.feedbackForm {
+  margin: 70px 0 0 0;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+
+    @include mixins.respond-to(desktopM) {
+      position: relative;
+
+      max-width: calc(100% - ((100% - var(--container-width)) / 2));
+      overflow: hidden;
+
+      margin-left: auto;
+    }
+  }
+
+  &__column {
+    margin: 0 25px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--left {
+      max-width: 636px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 25px 0;
+  }
+
+  &__subtitle {
+    display: inline-block;
+
+    margin: 0 0 45px 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border: none;
+    border-top: 1px solid var(--color-fountain-blue);
+    border-bottom: 1px solid var(--color-fountain-blue);
+    outline: none;
+
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color-black);
+
+    padding: 25px 0 20px 0;
+    margin: 0 0 20px 0;
+  }
+
+  &__checkbox-label {
+    display: flex;
+
+    user-select: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-black);
+
+    margin: 0 0 75px 0;
+
+    @include mixins.respond-to(mobileOnly) {
+      align-items: flex-start;
+    }
+  }
+
+  &__checkbox {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    border: 2px solid var(--color-white) !important;
+    box-sizing: border-box;
+
+    margin: 0 10px 0 0;
+  }
+
+  &__submit {
+    width: 317px;
+    box-sizing: border-box;
+  }
+}
