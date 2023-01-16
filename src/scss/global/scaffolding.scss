@@ -23,34 +23,34 @@ body {
   margin: 0;
 }
 
-.gdesc-inner {
-	position: relative;
+// .gdesc-inner {
+// 	position: relative;
 
-	overflow: hidden;
+// 	overflow: hidden;
 
-	z-index: 1;
+// 	z-index: 1;
 	
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
+// 	&::before {
+// 		content: "";
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
 
-		width: 100%;
-		height: 100%;
-		background-color: var(--color-fountain-blue);
+// 		width: 100%;
+// 		height: 100%;
+// 		background-color: var(--color-fountain-blue);
 
-		transform: translateX(-100%);
-		transition: transform 0.5s;
+// 		transform: translateX(-100%);
+// 		transition: transform 0.5s;
 
-		z-index: 1;
-	}
+// 		z-index: 1;
+// 	}
 
-	&:hover::before {
-		transform: translateX(0);
-		transition: transform 0.5s;
-	}
-}
+// 	&:hover::before {
+// 		transform: translateX(0);
+// 		transition: transform 0.5s;
+// 	}
+// }
 
 .gslide-title {
 	position: relative !important;

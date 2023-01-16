@@ -2,5 +2,66 @@
 
 .faq {
   margin: 70px 0 0 0;
+
+  &__title {
+    margin: 0 0 30px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__spoilers-item {
+    width: 100%;
+    min-height: 80px;
+    
+    border-bottom: 1px solid var(--color-black);
+
+    &:first-child {
+      border-top: 1px solid var(--color-black);
+    }
+  }
+
+  &__spoilers-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    cursor: pointer;
+
+    padding: 20px 0 20px 0;
+  }
+
+  &__spoilers-caption {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-black);
+    text-align: left;
+  }
+
+  &__spoilers-content {
+    display: none;
+
+    margin: 0 0 10px 0;
+  }
+
+  &__check-hidden:checked~.faq__spoilers-content {
+    display: block;
+  }
+
+  &__arrow-icon {
+    transition: transform 0.3s;
+  }
+
+  &__check-hidden:checked~.faq__spoilers-button .faq__arrow-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+  }
+
 }
 

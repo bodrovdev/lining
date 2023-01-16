@@ -2,18 +2,10 @@
 	<main class="page-content">
 		<section class="index-heading">
 			<div class="index-heading__container base-container">
-				<div class="index-heading__cover-img"></div>
+				<div class="index-heading__cover-img" style="background: url('../img/image/index-heading.jpg');background-size: cover;background-repeat: no-repeat;"></div>
 
 				<style>
-					.index-heading__cover-img {
-						background-image: url('../img/image/index-heading.jpg');
-						background-size: cover;
-						background-repeat: no-repeat;
-					}
-
-					@media only screen
-						and (min-device-width: 320px)
-						and (max-device-width: 767px) {
+					@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
 							.index-heading__cover-img {
 								background-image: url('../img/image/index-heading-mobile.jpg');
 								background-size: cover;
@@ -91,14 +83,9 @@
 			</div>
 		</section>
 
-		<section class="index-sampleForm">
+		<section class="index-sampleForm" style="background: url('../img/image/form-cover.jpg');background-size: cover;background-repeat: no-repeat;">
 
 			<style>
-				.index-sampleForm {
-					background: url('../img/image/form-cover.jpg');
-					background-size: cover;
-  				background-repeat: no-repeat;
-				}
 				@media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
 					.index-sampleForm {
 						background: url('../img/image/form-cover-mobile.jpg');
@@ -234,6 +221,7 @@
 								<figure class="index-projectSlider__slide-image base-figure">
 									<a class="glightbox" 
 											data-title="Облицовка дома"
+											data-gallery="gallery1"
 											data-description="Проект “Дымовая поэзия” Разработка фирменного стиля"
 											href="img/image/project-slider-2.jpg">
 										<img class="index-projectSlider__slide-img" src="img/image/project-slider-2.jpg" alt="">
@@ -251,6 +239,7 @@
 								<figure class="index-projectSlider__slide-image base-figure">
 									<a class="glightbox" 
 											data-title="Облицовка дома"
+											data-gallery="gallery1"
 											data-description="Проект “Дымовая поэзия” Разработка фирменного стиля"
 											href="img/image/project-slider-1.jpg">
 										<img class="index-projectSlider__slide-img" src="img/image/project-slider-1.jpg" alt="">
@@ -268,6 +257,7 @@
 								<figure class="index-projectSlider__slide-image base-figure">
 									<a class="glightbox" 
 											data-title="Облицовка дома"
+											data-gallery="gallery1"
 											data-description="Проект “Дымовая поэзия” Разработка фирменного стиля"
 											href="img/image/project-slider-3.jpg">
 										<img class="index-projectSlider__slide-img" src="img/image/project-slider-3.jpg" alt="">
@@ -297,6 +287,201 @@
 		</section>
 
 		<section class="faq">
+			<section class="faq__container base-container">
+				<h2 class="faq__title section-title base-title">Часто задаваемые вопросы</h2>
+				<div class="faq__wrapper">
+					<div class="faq__spoilers-item">
+						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-1"
+							name="about-spoilers">
+						<label class="faq__spoilers-button" for="spoilers-check-1">
+							<span class="faq__spoilers-caption">На какие поверхности монтируются панели?</span>
+							<svg class="faq__arrow-icon" width="17" height="9" alt="#">
+								<use href="img/icon/sprite.svg#spoiler-arrow-icon"></use>
+							</svg>
+						</label>
+						<div class="faq__spoilers-content">
+							Учитывая ключевые сценарии поведения, 
+							внедрение современных методик создаёт 
+							необходимость включения в производственный 
+							план целого ряда внеочередных мероприятий 
+							с учётом комплекса экономической 
+							целесообразности принимаемых решений. И нет сомнений,
+						</div>
+					</div>
+					<div class="faq__spoilers-item">
+						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-2"
+							name="about-spoilers">
+						<label class="faq__spoilers-button" for="spoilers-check-2">
+							<span class="faq__spoilers-caption">Сколько служит фасад из термопанелей?</span>
+							<svg class="faq__arrow-icon" width="17" height="9" alt="#">
+								<use href="img/icon/sprite.svg#spoiler-arrow-icon"></use>
+							</svg>
+						</label>
+						<div class="faq__spoilers-content">
+							Учитывая ключевые сценарии поведения, 
+							внедрение современных методик создаёт 
+							необходимость включения в производственный 
+							план целого ряда внеочередных мероприятий 
+							с учётом комплекса экономической 
+							целесообразности принимаемых решений. И нет сомнений,
+						</div>
+					</div>
+					<div class="faq__spoilers-item">
+						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-3"
+							name="about-spoilers">
+						<label class="faq__spoilers-button" for="spoilers-check-3">	
+							<span class="faq__spoilers-caption">Можно самостоятельно установить их?</span>
+							<svg class="faq__arrow-icon" width="17" height="9" alt="#">
+								<use href="img/icon/sprite.svg#spoiler-arrow-icon"></use>
+							</svg>
+						</label>
+						<div class="faq__spoilers-content">
+							Учитывая ключевые сценарии поведения, 
+							внедрение современных методик создаёт 
+							необходимость включения в производственный 
+							план целого ряда внеочередных мероприятий 
+							с учётом комплекса экономической 
+							целесообразности принимаемых решений. И нет сомнений,
+						</div>
+					</div>
+					<div class="faq__spoilers-item">
+						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-4"
+							name="about-spoilers">
+						<label class="faq__spoilers-button" for="spoilers-check-4">
+							<span class="faq__spoilers-caption">Нужно ли заделывать стыки после монтажа?</span>
+							<svg class="faq__arrow-icon" width="17" height="9" alt="#">
+								<use href="img/icon/sprite.svg#spoiler-arrow-icon"></use>
+							</svg>
+						</label>
+						<div class="faq__spoilers-content">
+							Учитывая ключевые сценарии поведения, 
+							внедрение современных методик создаёт 
+							необходимость включения в производственный 
+							план целого ряда внеочередных мероприятий 
+							с учётом комплекса экономической 
+							целесообразности принимаемых решений. И нет сомнений,
+						</div>
+					</div>
+					<div class="faq__spoilers-item">
+						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-5"
+							name="about-spoilers">
+						<label class="faq__spoilers-button" for="spoilers-check-5">
+							<span class="faq__spoilers-caption">Нужно ли заделывать стыки после монтажа?</span>
+							<svg class="faq__arrow-icon" width="17" height="9" alt="#">
+								<use href="img/icon/sprite.svg#spoiler-arrow-icon"></use>
+							</svg>
+						</label>
+						<div class="faq__spoilers-content">
+							Учитывая ключевые сценарии поведения, 
+							внедрение современных методик создаёт 
+							необходимость включения в производственный 
+							план целого ряда внеочередных мероприятий 
+							с учётом комплекса экономической 
+							целесообразности принимаемых решений. И нет сомнений,
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="index-services">
+			<div class="index-services__container base-container">
+				<h2 class="index-services__title section-title base-title">Услуги которые<br>мы предоставляем</h2>
+				<div class="index-services__wrapper">
+					<div class="index-services__item" style="background: url('img/image/index-serv-1.jpg');background-size: cover;background-repeat: no-repeat;">
+						<div class="index-services__item-inner">
+							<span class="index-services__item-num">01</span>
+							<h3 class="index-services__item-title base-title">Продажа и доставка панелей</h3>
+							<p class="index-services__item-text base-par">
+								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
+							</p>
+						</div>
+					</div>
+					<div class="index-services__item" style="background: url('img/image/index-serv-2.jpg');background-size: cover;background-repeat: no-repeat;">
+						<div class="index-services__item-inner">
+							<span class="index-services__item-num">02</span>
+							<h3 class="index-services__item-title base-title">Замер и консультация на участке</h3>
+							<p class="index-services__item-text base-par">
+								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
+							</p>
+						</div>
+					</div>
+					<div class="index-services__item" style="background: url('img/image/index-serv-3.jpg');background-size: cover;background-repeat: no-repeat;">
+						<div class="index-services__item-inner">
+							<span class="index-services__item-num">03</span>
+							<h3 class="index-services__item-title base-title">Монтаж панелей </h3>
+							<p class="index-services__item-text base-par">
+								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="index-blogSlider">
+			<div class="index-blogSlider__container base-container">
+				<h2 class="index-blogSlider__title base-title"></h2>
+				<div class="index-blogSlider__slider-container">
+					<div class="index-blogSlider__slider swiper">
+						<div class="index-blogSlider__slider-wrapper swiper-wrapper">
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-1.jpg');background-size: cover;background-repeat: no-repeat;">
+								<div class="index-blogSlider__slide-inner">
+									<span class="index-blogSlider__slide-time">12/01/2023</span>
+									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+									<p class="index-blogSlider__slide-text base-par">
+										Проект “Дымовая поэзия” Разработка фирменного стиля...
+									</p>
+								</div>
+							</div>
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-2.jpg');background-size: cover;background-repeat: no-repeat;">
+								<div class="index-blogSlider__slide-inner">
+									<span class="index-blogSlider__slide-time">12/01/2023</span>
+									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+									<p class="index-blogSlider__slide-text base-par">
+										Проект “Дымовая поэзия” Разработка фирменного стиля...
+									</p>
+								</div>
+							</div>
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-3.jpg');background-size: cover;background-repeat: no-repeat;">
+								<div class="index-blogSlider__slide-inner">
+									<span class="index-blogSlider__slide-time">12/01/2023</span>
+									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+									<p class="index-blogSlider__slide-text base-par">
+										Проект “Дымовая поэзия” Разработка фирменного стиля...
+									</p>
+								</div>
+							</div>
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-4.jpg');background-size: cover;background-repeat: no-repeat;">
+								<div class="index-blogSlider__slide-inner">
+									<span class="index-blogSlider__slide-time">12/01/2023</span>
+									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+									<p class="index-blogSlider__slide-text base-par">
+										Проект “Дымовая поэзия” Разработка фирменного стиля...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="index-blogSlider__underline">
+					<div class="index-blogSlider__underline-container base-container">
+						<div class="index-blogSlider__progressbar"></div>
+						<div class="index-blogSlider__arrows arrows">
+							<div class="index-blogSlider__arrow index-blogSlider__arrow--prev arrows__arrow arrows__arrow--prev">
+								<svg class="arrow-icon" width="16" height="16" alt="#">
+									<use href="img/icon/sprite.svg#arrow-icon"></use>
+								</svg>
+							</div>
+							<div class="index-blogSlider__arrow index-blogSlider__arrow--next arrows__arrow arrows__arrow-next">
+								<svg class="arrow-icon" width="16" height="16" alt="#" style="transform: rotate(-180deg);">
+									<use href="img/icon/sprite.svg#arrow-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 		</section>
 	</main>

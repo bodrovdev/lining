@@ -22,7 +22,7 @@ let color_slider = new Swiper('.index-colorSlider__slider', {
     1024: {
       slidesPerView: "auto",
     }
-}
+  }
 });
 
 let projects_slider = new Swiper('.index-projectSlider__slider', {
@@ -30,10 +30,44 @@ let projects_slider = new Swiper('.index-projectSlider__slider', {
   slidesPerView: "auto",
   centeredSlides: true,
   initialSlide: 1,
+  loop: true,
   speed: 700,
 
   navigation: {
     nextEl: ".index-projectSlider__arrow--next",
     prevEl: ".index-projectSlider__arrow--prev",
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    1366: {
+      slidesPerView: "auto",
+    }
+  }
+});
+
+let blog_slider = new Swiper('.index-blogSlider__slider', {
+  loop: "true",
+  spaceBetween: 25,
+
+  navigation: {
+    nextEl: ".index-blogSlider__arrow--next",
+    prevEl: ".index-blogSlider__arrow--prev",
+  },
+
+  pagination: {
+    el: ".index-blogSlider__progressbar",
+    type: "fraction",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: "auto",
+    }
+  }
 });

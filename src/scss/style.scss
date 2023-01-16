@@ -21,6 +21,7 @@
 @use 'global/fonts';
 
 //БЭМ блоки
+@use 'blocks/visually-hidden';
 @use 'blocks/main-button';
 @use 'blocks/blue-hover';
 @use 'blocks/blue-line-hover';
@@ -35,4 +36,7 @@
 @use 'blocks/section-title';
 @use 'blocks/index-sampleForm';
 @use 'blocks/index-colorSlider';
-@use 'blocks/index-projectSlider';@use 'blocks/faq';
+@use 'blocks/index-projectSlider';
+@use 'blocks/faq';
+@use 'blocks/index-services';
+@use 'blocks/index-blogSlider';

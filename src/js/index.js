@@ -31,3 +31,16 @@ nav_list.onclick = function(event) {
     enableBodyScroll(mobile_menu);
   }
 };
+
+//Закрытие спойлерных блоков при открытии нового
+let spoilers = document.querySelectorAll('.faq__check-hidden');
+
+spoilers.forEach((element) => {
+  element.addEventListener('click', (e) => {
+    for (let i = 0; i < spoilers.length; i++) {
+      if (spoilers[i] !== e.target) {
+        spoilers[i].checked = false;
+      }
+    }
+  })
+})
