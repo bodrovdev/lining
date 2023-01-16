@@ -1,0 +1,45 @@
+@use "../mixins";
+
+.footer-main {
+  &__container {}
+
+  &__wrapper {
+    display: inline-grid;
+    grid-template: repeat(2, auto) / repeat(3, auto);
+    grid-gap: 20px 100px;
+    grid-template-areas: 
+    "label1 label2 label3"
+    "leftСontent list1 list2";
+
+    width: fit-content;
+  }
+
+  &__label-top {
+    &:nth-of-type(1) {
+      grid-area: label1;
+    }
+    &:nth-of-type(2) {
+      grid-area: label2;
+    }
+    &:nth-of-type(3) {
+      grid-area: label3;
+    }
+  }
+
+  &__left-block {
+    grid-area: leftСontent;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-list {
+    display: inline-block;
+
+    &:nth-of-type(1) {
+      grid-area: list1;
+    }
+    &:nth-of-type(2) {
+      grid-area: list2;
+    }
+  }
+}
