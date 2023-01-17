@@ -55,12 +55,12 @@
   }
 
   &__arrow-icon {
-    transition: transform 0.3s;
+    transition: transform 0.1s;
   }
 
   &__check-hidden:checked~.faq__spoilers-button .faq__arrow-icon {
     transform: rotate(180deg);
-    transition: transform 0.3s;
+    transition: transform 0.1s;
   }
 
 }
