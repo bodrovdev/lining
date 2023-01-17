@@ -10,6 +10,10 @@
     padding: 70px 0 70px 0;
   }
 
+  @include mixins.respond-to(tabletOnly) {
+    padding: 70px 0 70px 0;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -24,6 +28,10 @@
     margin: 0 0 10px 0;
 
     @include mixins.respond-to(mobileOnly) {
+      margin: 0 0 16px 0;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       margin: 0 0 16px 0;
     }
   }
@@ -44,6 +52,12 @@
 
       margin: 0 0 20px 0;
     }
+
+    @include mixins.respond-to(tabletOnly) {
+      font-size: 24px;
+
+      margin: 0 0 20px 0;
+    }
   }
 
   &__formset {
@@ -52,6 +66,10 @@
     margin: 0 0 15px 0;
 
     @include mixins.respond-to(mobileOnly) {
+      flex-direction: column;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       flex-direction: column;
     }
   }
@@ -107,6 +125,10 @@
     color: var(--color-white);
 
     @include mixins.respond-to(mobileOnly) {
+      align-items: flex-start;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
       align-items: flex-start;
     }
   }

@@ -3,6 +3,33 @@
 .index-projectSlider {
   margin: 70px 0 0 0;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    @include mixins.respond-to(mobileOnly) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    margin: 0 0 15px 0;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-boulder);
+  }
+
   &__slider-container {
     position: relative;
   }
@@ -16,6 +43,22 @@
   }
 
   @include mixins.respond-to(mobileOnly) {
+    &__slider {
+      height: 430px;
+      min-height: auto;
+      opacity: 1;
+  
+      & .index-projectSlider__slide-content {
+        height: 430px;
+      }
+  
+      & .index-projectSlider__slide-img {
+        height: 430px;
+      }
+    }
+  }
+
+  @include mixins.respond-to(tablet) {
     &__slider {
       height: 430px;
       min-height: auto;
@@ -88,8 +131,17 @@
   }
 
   &__slide-img {
-    width: 870px;
     object-fit: cover;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+    }
+    @include mixins.respond-to(tablet) {
+      width: 100%;
+    }
+    @include mixins.respond-to(desktopM) {
+      width: 870px;
+    }
   }
 
   &__slide-info {
@@ -107,6 +159,10 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     @include mixins.respond-to(mobileOnly) {
+      padding: 10px;
+    }
+
+    @include mixins.respond-to(tablet) {
       padding: 10px;
     }
 
@@ -168,7 +224,6 @@
     display: flex;
     justify-content: space-between;
 
-    width: 930px;
     height: fit-content;
     pointer-events: none;
 
@@ -177,11 +232,18 @@
     @include mixins.respond-to(mobileOnly) {
       width: 90%;
     }
+
+    @include mixins.respond-to(tablet) {
+      width: 90%;
+    }
+
+    @include mixins.respond-to(desktopM) {
+      width: 930px;
+    }
   }
 
   &__arrow {
-    width: 60px;
-    height: 60px;
+
     background-color: var(--color-fountain-blue);
     border: 1px solid var(--color-white);
     pointer-events: all;
@@ -189,6 +251,16 @@
     @include mixins.respond-to(mobileOnly) {
       width: 40px;
       height: 40px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include mixins.respond-to(desktopM) {
+      width: 60px;
+      height: 60px;
     }
 
     & .arrow-icon {

@@ -21,26 +21,30 @@
 @use 'global/fonts';
 
 //БЭМ блоки
-@use 'blocks/visually-hidden';
+@use 'blocks/section-title';
 @use 'blocks/main-button';
 @use 'blocks/blue-hover';
 @use 'blocks/blue-line-hover';
 @use 'blocks/arrows';
+@use 'blocks/visually-hidden';
 
+@use 'blocks/main-nav';
+@use 'blocks/footer-main';
+@use 'blocks/footer-underline';
+
+@use 'blocks/feedbackForm';
+@use 'blocks/map';
 @use 'blocks/page-header';
 @use 'blocks/page-content';
 @use 'blocks/page-footer';
-@use 'blocks/main-nav';
+
 @use 'blocks/index-heading';
 @use 'blocks/index-features';
-@use 'blocks/section-title';
 @use 'blocks/index-sampleForm';
 @use 'blocks/index-colorSlider';
 @use 'blocks/index-projectSlider';
 @use 'blocks/faq';
 @use 'blocks/index-services';
 @use 'blocks/index-blogSlider';
-@use 'blocks/feedbackForm';
-@use 'blocks/map';
-@use 'blocks/footer-main';
-@use 'blocks/footer-underline';
+
+@use 'blocks/second-heading';
