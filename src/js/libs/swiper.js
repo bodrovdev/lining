@@ -30,7 +30,7 @@ let projects_slider = new Swiper('.index-projectSlider__slider', {
   slidesPerView: "auto",
   centeredSlides: true,
   initialSlide: 1,
-  loop: true,
+  // loop: true,
   speed: 700,
 
   navigation: {

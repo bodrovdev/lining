@@ -1,13 +1,17 @@
 @use "../mixins";
 
 .index-features {
+  margin: 70px 0 0 0;
+
   &__container {
     display: flex;
     flex-direction: column;
   }
 
   &__title {
-    margin: 0 0 55px 0;
+    font-size: 44px;
+
+    margin: 0 0 40px 0;
 
     @include mixins.respond-to(mobileOnly) {
       margin: 0 0 30px 0;
