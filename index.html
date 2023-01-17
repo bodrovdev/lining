@@ -112,16 +112,16 @@
 	<main class="page-content">
 		<section class="index-heading">
 			<div class="index-heading__container base-container">
-				<div class="index-heading__cover-img" style="background: url('img/image/index-heading.jpg');background-size: cover;background-repeat: no-repeat;"></div>
+				<div class="index-heading__cover-img" style="background:url('img/image/index-heading.jpg');background-size:cover;background-repeat:no-repeat;"></div>
 
 				<style>
-					@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-							.index-heading__cover-img {
-								background-image: url('../img/image/index-heading-mobile.jpg');
-								background-size: cover;
-								background-repeat: no-repeat;
-							}
+					@media only screen and (min-width: 320px) and (max-width: 767px) {
+						.index-heading__cover-img {
+							background: url('img/image/index-heading-mobile.jpg') !important;
+							background-size: cover !important;
+							background-repeat: no-repeat !important;
 						}
+					}
 				</style>
 
 				<div class="index-heading__info">
@@ -192,14 +192,14 @@
 			</div>
 		</section>
 
-		<section class="index-sampleForm" style="background: url('img/image/form-cover.jpg');background-size: cover;background-repeat: no-repeat;">
+		<section class="index-sampleForm" style="background:url('img/image/form-cover.jpg');background-size:cover;background-repeat:no-repeat;">
 
 			<style>
-				@media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
+				@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
 					.index-sampleForm {
-						background: url('../img/image/form-cover-mobile.jpg');
-						background-size: cover;
-						background-repeat: no-repeat;
+						background: url('../img/image/form-cover-mobile.jpg') !important;
+						background-size: cover !important;
+						background-repeat: no-repeat !important;
 					}
 				}
 			</style>
@@ -319,7 +319,13 @@
 		</section>
 
 		<section class="index-projectSlider">
-			<div class="index-projectSlider__container base-container">			
+			<div class="index-projectSlider__container base-container">
+				<h2 class="index-projectSlider__title section-title base-title">Наши проекты</h2>
+				<p class="index-projectSlider__subtitle base-par">
+					Безусловно, граница обучения кадров является качественно 
+					новой ступенью кластеризации усилий. Господа, 
+					начало повседневной работы по формированию
+				</p>
 			</div>
 			<div class="index-projectSlider__slider-container">
 				<div class="index-projectSlider__slider swiper">
@@ -497,7 +503,7 @@
 			<div class="index-services__container base-container">
 				<h2 class="index-services__title section-title base-title">Услуги которые<br>мы предоставляем</h2>
 				<div class="index-services__wrapper">
-					<div class="index-services__item" style="background: url('img/image/index-serv-1.jpg');background-size: cover;background-repeat: no-repeat;">
+					<div class="index-services__item" style="background:url('img/image/index-serv-1.jpg');background-size:cover;background-repeat:no-repeat;">
 						<div class="index-services__item-inner">
 							<span class="index-services__item-num">01</span>
 							<h3 class="index-services__item-title base-title">Продажа и доставка панелей</h3>
@@ -506,7 +512,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="index-services__item" style="background: url('img/image/index-serv-2.jpg');background-size: cover;background-repeat: no-repeat;">
+					<div class="index-services__item" style="background:url('img/image/index-serv-2.jpg');background-size:cover;background-repeat:no-repeat;">
 						<div class="index-services__item-inner">
 							<span class="index-services__item-num">02</span>
 							<h3 class="index-services__item-title base-title">Замер и консультация на участке</h3>
@@ -515,7 +521,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="index-services__item" style="background: url('img/image/index-serv-3.jpg');background-size: cover;background-repeat: no-repeat;">
+					<div class="index-services__item" style="background:url('img/image/index-serv-3.jpg');background-size:cover;background-repeat:no-repeat;">
 						<div class="index-services__item-inner">
 							<span class="index-services__item-num">03</span>
 							<h3 class="index-services__item-title base-title">Монтаж панелей </h3>
@@ -530,11 +536,11 @@
 
 		<section class="index-blogSlider">
 			<div class="index-blogSlider__container base-container">
-				<h2 class="index-blogSlider__title base-title">Блог нашей<br> компании</h2>
+				<h2 class="index-blogSlider__title section-title base-title">Блог нашей<br> компании</h2>
 				<div class="index-blogSlider__slider-container">
 					<div class="index-blogSlider__slider swiper">
 						<div class="index-blogSlider__slider-wrapper swiper-wrapper">
-							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-1.jpg');background-size: cover;background-repeat: no-repeat;">
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-1.jpg');background-size:cover;background-repeat:no-repeat;">
 								<div class="index-blogSlider__slide-inner">
 									<span class="index-blogSlider__slide-time">12/01/2023</span>
 									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
@@ -543,7 +549,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-2.jpg');background-size: cover;background-repeat: no-repeat;">
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-2.jpg');background-size:cover;background-repeat:no-repeat;">
 								<div class="index-blogSlider__slide-inner">
 									<span class="index-blogSlider__slide-time">12/01/2023</span>
 									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
@@ -552,7 +558,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-3.jpg');background-size: cover;background-repeat: no-repeat;">
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-3.jpg');background-size: cover;background-repeat: no-repeat;">
 								<div class="index-blogSlider__slide-inner">
 									<span class="index-blogSlider__slide-time">12/01/2023</span>
 									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
@@ -561,7 +567,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="index-blogSlider__slider-slide swiper-slide" style="background: url('img/image/blog-slide-4.jpg');background-size: cover;background-repeat: no-repeat;">
+							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-4.jpg');background-size: cover;background-repeat: no-repeat;">
 								<div class="index-blogSlider__slide-inner">
 									<span class="index-blogSlider__slide-time">12/01/2023</span>
 									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
