@@ -58,7 +58,7 @@
     }
   }
 
-  @include mixins.respond-to(tablet) {
+  @include mixins.respond-to(tabletOnly) {
     &__slider {
       height: 430px;
       min-height: auto;
