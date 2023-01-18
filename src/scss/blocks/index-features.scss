@@ -133,6 +133,18 @@
         animation-fill-mode: forwards;
         animation-duration: 0.5s;
       }
+
+      &:hover .index-features__info-title {
+        color: var(--color-white);
+        
+        transition: color 0.5s;
+      }
+
+      &:hover .index-features__info-text {
+        color: var(--color-white);
+        
+        transition: color 0.5s;
+      }
     }
 
     @include mixins.respond-to(desktopD) {
@@ -202,6 +214,8 @@
     line-height: 34px;
     color: var(--color-black);
 
+    transition: color 0.5s;
+
     margin: 0 0 14px 0;
 
     z-index: 2;
@@ -215,6 +229,8 @@
     line-height: 24px;
     color: var(--color-scorpion);
     text-align: left;
+
+    transition: color 0.5s;
 
     z-index: 2;
   }

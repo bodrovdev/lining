@@ -26,9 +26,16 @@
     margin-left: auto;
 
     @include mixins.respond-to(mobileOnly) {
+      align-items: center;
+      justify-content: flex-start;
+
       background: none !important;
 
-      padding: 20px 0 20px 20px;
+      padding: 0 0 0 5%;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
+      padding: 0 0 50px 50px;
     }
 
     &::before {
@@ -58,7 +65,7 @@
     z-index: 5;
 
     @include mixins.respond-to(mobileOnly) {
-      margin: 0 0 auto 0;
+      margin: 0;
     }
   }
 
@@ -77,18 +84,16 @@
     z-index: 5;
 
     @include mixins.respond-to(mobileOnly) {
-      order: 2;
-
       font-size: 35px;
       line-height: 130%;
 
-      margin: 20px 0 0 0;
+      margin: 0;
     }
   }
 
   &__breadcrumbs {
     @include mixins.respond-to(mobileOnly) {
-      order: 1;
+      display: none;
     }
   }
 

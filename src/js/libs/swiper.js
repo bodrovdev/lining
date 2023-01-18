@@ -50,7 +50,7 @@ let projects_slider = new Swiper('.index-projectSlider__slider', {
 
 let blog_slider = new Swiper('.index-blogSlider__slider', {
   loop: "true",
-  spaceBetween: 25,
+  spaceBetween: 0,
 
   navigation: {
     nextEl: ".index-blogSlider__arrow--next",
@@ -71,3 +71,23 @@ let blog_slider = new Swiper('.index-blogSlider__slider', {
     }
   }
 });
+
+let about_project_slider = new Swiper('.about-projectSlider__slider', {
+  spaceBetween: 25,
+  slidesPerView: "auto",
+
+  navigation: {
+    nextEl: ".about-projectSlider__arrow--next",
+    prevEl: ".about-projectSlider__arrow--prev",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: "auto",
+    }
+  }
+});
+
