@@ -1,0 +1,42 @@
+@@include('components/_base/_base-header.html')
+
+<main class="page-content">
+
+  @@include('components/_bem/_heading.html', {
+    "background": "img/image/contacts-heading.jpg",
+    "title": "Наши контакты для связи",
+    "currentPage": "Контакты"
+  })
+
+  <section class="contacts">
+    <div class="contacts__container base-container">
+      <div class="contacts__info">
+
+        <div class="contacts__info-set">
+          <h3 class="contacts__info-title base-title">Наш адрес</h3>
+          <p class="contacts__info-text base-par">Орехово-Зуево, Московская область,  ул. Ленина, 86 (этаж 1, офис 1)</p>
+          <p class="contacts__info-text base-par">Орехово-Зуево, Московская область,  ул. Ленина, 86 (этаж 1, офис 1)</p>
+        </div>
+
+        <div class="contacts__info-set">
+          <h3 class="contacts__info-title base-title">Наш телефон</h3>
+          <a class="contacts__info-link base-link" href="tel:">+7 (000) 000-00-00</a>
+          <a class="contacts__info-link base-link" href="tel:">+7 (000) 000-00-00</a>
+        </div>
+
+        <div class="contacts__info-set">
+          <h3 class="contacts__info-title base-title">Наш почтовый адрес</h3>
+          <a class="contacts__info-link base-link" href="maillto:">info@gmail.com</a>
+          <a class="contacts__info-link base-link" href="maillto:">info@gmail.com</a>
+        </div>
+
+      </div>
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a108e6f1ea50f0ef854e652c3599105dc8d6be1ef4f043a22464052b41bd423&amp;source=constructor" width="740" height="430" frameborder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('components/_base/_base-footer.html')

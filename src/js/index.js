@@ -32,7 +32,7 @@ nav_list.onclick = function(event) {
   }
 };
 
-//Закрытие спойлерных блоков при открытии нового
+// --- Закрытие спойлерных блоков при открытии нового
 let spoilers = document.querySelectorAll('.faq__check-hidden');
 
 spoilers.forEach((element) => {

@@ -1,0 +1,143 @@
+@use "../mixins";
+
+.about-sert {
+  margin: 40px 0 0 0;
+
+  &__heading {
+    margin: 0 0 30px 0;
+
+    & p {
+      font-family: var(--font-family-default);
+
+      padding: 0;
+      margin: 0 0 30px 0;
+
+      @include mixins.respond-to(mobileOnly) {
+        font-size: 18px;
+        line-height: 130%;
+      }
+
+      @include mixins.respond-to(tabletOnly) {
+        font-size: 18px;
+        line-height: 130%;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    & h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-family-title);
+
+      padding: 0;
+      margin: 0 0 20px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    @include mixins.respond-to(mobileOnly) {
+      flex-direction: column;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
+      flex-direction: column;
+    }
+
+    &-text {
+
+      @include mixins.respond-to(mobileOnly) {
+        order: 2;
+      }
+
+      @include mixins.respond-to(tabletOnly) {
+        order: 2;
+      }
+
+      @include mixins.respond-to(desktopS) {
+        margin: 0 30px 0 0;
+      }
+
+      @include mixins.respond-to(desktopD) {
+        margin: 0 60px 0 0;
+      }     
+
+      & p {
+        font-family: var(--font-family-default);
+  
+        padding: 0;
+        margin: 0 0 30px 0;
+  
+        @include mixins.respond-to(mobileOnly) {
+          font-size: 18px;
+          line-height: 130%;
+        }
+  
+        @include mixins.respond-to(tabletOnly) {
+          font-size: 18px;
+          line-height: 130%;
+        }
+  
+        &:last-child {
+          margin: 0;
+        }
+      }
+  
+      & h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-family-title);
+  
+        padding: 0;
+        margin: 0 0 20px 0;
+  
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    &-image {
+      display: block;
+
+      width: fit-content;
+      height: fit-content;
+
+      @include mixins.respond-to(mobileOnly) {
+        order: 1;
+
+        margin: 0 0 30px 0;
+      }
+
+      @include mixins.respond-to(tabletOnly) {
+        order: 1;
+
+        margin: 0 auto 30px auto;
+      }
+    }
+
+    &-img {
+      display: block;
+
+      width: 525px;
+      height: 410px;
+      object-fit: cover;
+      vertical-align: top;
+
+      @include mixins.respond-to(mobileOnly) {
+        width: 100%;
+        height: auto;
+      }
+
+      @include mixins.respond-to(tabletOnly) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -20,26 +20,27 @@
   }
 
   &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     margin: 0 0 40px 0;
 
     @include mixins.respond-to(mobileOnly) {
+      display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    @include mixins.respond-to(tabletOnly) {
+    @include mixins.respond-to(tablet) {
       display: grid;
       grid-template: 2fr / repeat(3, 1fr);
       grid-template-areas: 
       "item1 item2 item3"
       "item4 item4 item4";
       grid-gap: 20px;
+    }
 
-      margin: 0 0 40px 0;
+    @include mixins.respond-to(desktopD) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 
@@ -97,6 +98,40 @@
     }
   }
 
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
+    &__item {
+      align-items: center;
+      justify-content: center;
+
+      height: 270px;
+      background-color: var(--color-wedgewood);
+      box-sizing: border-box;
+
+      padding: 10px;
+      margin: 0;
+
+      &:first-child {
+        grid-area: item1;
+      }
+
+      &:nth-child(2) {
+        grid-area: item2;
+      }
+
+      &:nth-child(3) {
+        grid-area: item3;
+      }
+
+      &:last-child {
+        grid-area: item4;
+
+        width: 100%;
+
+        margin: 0;
+      }
+    }
+  }
+
   &__item-top {
     margin: 0 0 20px 0;
 
@@ -108,18 +143,21 @@
   &__item-num {
     font-family: var(--font-family-title);
     font-weight: 700;
-    font-size: 100px;
     line-height: 100px;
-    color: var(--color-mine-shaft);
 
     @include mixins.respond-to(mobileOnly) {
       font-size: 70px;
       color: var(--color-white);
     }
 
-    @include mixins.respond-to(tabletOnly) {
+    @include mixins.respond-to(tablet) {
       font-size: 70px;
       color: var(--color-white);
+    }
+
+    @include mixins.respond-to(desktopD) {
+      font-size: 100px;
+      color: var(--color-mine-shaft);
     }
 
     &--text {
@@ -133,12 +171,9 @@
   &__item-desc {
     display: inline-block;
 
-    max-width: 200px;
-
     font-family: var(--font-family-default);
     font-size: 18px;
     line-height: 23px;
-    color: var(--color-mine-shaft);
 
     @include mixins.respond-to(mobileOnly) {
       max-width: inherit;
@@ -146,12 +181,18 @@
       color: var(--color-white);
     }
 
-    @include mixins.respond-to(tabletOnly) {
+    @include mixins.respond-to(tablet) {
       max-width: inherit;
-
-      text-align: center;
-      
+     
       color: var(--color-white);
+      text-align: center;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      max-width: 200px;
+
+      color: var(--color-mine-shaft);
+      text-align: left;
     }
   }
 

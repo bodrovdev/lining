@@ -1,17 +1,24 @@
 @use "../mixins";
 
 .feedbackForm {
+  background-color: var(--color-alabaster);
   overflow: hidden;
 
   @include mixins.respond-to(mobileOnly) {
+    padding: 50px 0 50px 0;
+
     margin: 60px 0 0 0;
   }
 
   @include mixins.respond-to(tablet) {
+    padding: 50px 0 50px 0;
+
     margin: 60px 0 0 0;
   }
 
   @include mixins.respond-to(desktopM) {
+    padding: 100px 0 100px 0;
+
     margin: 70px 0 0 0;
   }
 

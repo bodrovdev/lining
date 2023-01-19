@@ -1,0 +1,148 @@
+@use "../mixins";
+
+.blog {
+  margin: 70px 0 0 0;
+
+  @include mixins.respond-to(mobileOnly) {
+    margin: 60px 0 0 0;
+  }
+
+  &__image {
+    display: block;
+    
+    width: fit-content;
+    height: fit-content;
+
+    margin: 0 0 25px 0;
+  }
+
+  &__img {
+    @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0 0 40px 0;
+  }
+
+  &__wrapper {
+    margin: 0 0 30px 0;
+
+    @include mixins.respond-to(mobileOnly) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include mixins.respond-to(desktopM) {
+      display: grid;
+      grid-template: 2fr / repeat(3, auto);
+      grid-gap: 25px;
+      align-items: start;
+      justify-items: start;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    border: 1px solid var(--color-black);
+
+    @include mixins.respond-to(mobileOnly) {
+      margin: 0 0 20px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    @include mixins.respond-to(tablet) {
+      width: 415px;
+
+      margin: 0 0 20px 0;
+    }
+
+    @include mixins.respond-to(desktopM) {
+      margin: 0;
+    }
+  }
+
+  &__item-info {
+    padding: 0 10px 35px 25px;
+
+    @include mixins.respond-to(mobileOnly) {
+      padding: 0 10px 10px 10px;
+    }
+  }
+
+  &__item-title {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: var(--color-ebony-clay);
+
+    margin: 0 0 15px 0;
+  }
+
+  &__item-text {
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--color-scorpion);
+
+    margin: 0 0 15px 0;
+  }
+
+  &__item-date {
+    display: flex;
+
+    margin: 0 0 15px 0;
+  }
+
+  &__date-icon {
+    margin: 0 10px 0 0;
+  }
+
+  &__date-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--color-scorpion);
+  }
+
+  &__learnmore {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      display: inline-block;
+
+      font-family: var(--font-family-title);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: var(--color-scorpion);
+
+      margin: 0 10px 0 0;
+    }
+  }
+}

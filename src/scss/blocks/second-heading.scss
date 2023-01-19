@@ -9,6 +9,10 @@
   margin: 40px 0 40px 0;
 
   @include mixins.respond-to(mobileOnly) {
+    margin: 26px 0 40px 0;
+  }
+
+  @include mixins.respond-to(mobileOnly) {
     height: 180px;
     background-color: var(--color-fountain-blue);
   }

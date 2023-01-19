@@ -50,7 +50,7 @@ let projects_slider = new Swiper('.index-projectSlider__slider', {
 
 let blog_slider = new Swiper('.index-blogSlider__slider', {
   loop: "true",
-  spaceBetween: 0,
+  spaceBetween: 25,
 
   navigation: {
     nextEl: ".index-blogSlider__arrow--next",
