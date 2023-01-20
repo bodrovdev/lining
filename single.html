@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>OZTERMO - фасадные термопанели</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__nav-wrapper">
+          <div class="main-nav__nav-top">
+            <div class="main-nav__top-container base-container">
+              <div class="main-nav__top-work">
+                <svg class="main-nav__work-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка часов">
+                  <use href="img/icon/sprite.svg#time-icon"></use>
+                </svg>
+                <span class="main-nav__work-text main-nav__top-item-text">
+                  Пн - Пт: 9:00 - 18:00 / Сб - Вс:<br>
+                  выходные
+                </span>
+              </div>
+              <div class="main-nav__top-contacts">
+                <a class="main-nav__top-link blue-hover base-link" href="mailto:info@gmail.com">
+                  <svg class="main-nav__link-icon main-nav__top-item-icon" width="16" height="16" alt="Иконка почты">
+                    <use href="img/icon/sprite.svg#email-icon"></use>
+                  </svg>
+                  <span class="main-nav__work-text main-nav__top-item-text">info@gmail.com</span>
+                </a>
+                <a class="main-nav__top-link blue-hover base-link" href="tel:+70000000000">
+                  <svg class="main-nav__link-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка телефона">
+                    <use href="img/icon/sprite.svg#phone-icon"></use>
+                  </svg>
+                  <span class="main-nav__work-text main-nav__top-item-text">+7 (000) 000-00-00</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main-nav__nav-container base-container">
+            <a class="main-nav__logo-link base-link" href="index.html">
+              <figure class="main-nav__logo-image base-figure">
+                <img class="main-nav__logo-img" src="img/image/logo.svg" width=237" height="54" alt="Логотип">
+              </figure>
+            </a>
+            <div class="main-nav__nav-menu main-nav__nav-menu--mobile" id="mobile_menu">
+              <ul class="main-nav__nav-list base-list">
+                <li class="main-nav__nav-item">
+                  <a class="main-nav__nav-link blue-hover base-link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__nav-item">
+                  <a class="main-nav__nav-link blue-hover base-link" href="about.html">О компании</a>
+                </li>
+                <li class="main-nav__nav-item">
+                  <a class="main-nav__nav-link blue-hover base-link" href="services.html">Услуги</a>
+                </li>
+                <li class="main-nav__nav-item">
+                  <a class="main-nav__nav-link blue-hover base-link" href="archive.html">Блог</a>
+                </li>
+                <li class="main-nav__nav-item">
+                  <a class="main-nav__nav-link blue-hover base-link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+
+              <a class="main-button base-link" href="#">
+  <span class="main-button__text">Обратный звонок</span>
+</a>
+
+                <div class="main-nav__nav-info main-nav__nav-info--mobile">
+                  <div class="main-nav__top-work">
+                    <svg class="main-nav__work-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка часов">
+                      <use href="img/icon/sprite.svg#time-icon"></use>
+                    </svg>
+                    <span class="main-nav__work-text main-nav__top-item-text">
+                      Пн - Пт: 9:00 - 18:00 / Сб - Вс:<br>
+                      выходные
+                    </span>
+                  </div>
+                  <div class="main-nav__top-contacts">
+                    <a class="main-nav__top-link blue-hover base-link" href="mailto:info@gmail.com">
+                      <svg class="main-nav__link-icon main-nav__top-item-icon" width="16" height="16" alt="Иконка почты">
+                        <use href="img/icon/sprite.svg#email-icon"></use>
+                      </svg>
+                      <span class="main-nav__work-text main-nav__top-item-text">info@gmail.com</span>
+                    </a>
+                    <a class="main-nav__top-link blue-hover base-link" href="tel:+70000000000">
+                      <svg class="main-nav__link-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка телефона">
+                        <use href="img/icon/sprite.svg#phone-icon"></use>
+                      </svg>
+                      <span class="main-nav__work-text main-nav__top-item-text">+7 (000) 000-00-00</span>
+                    </a>
+                  </div>
+                </div>
+
+            </div>
+
+            <button class="main-nav__burger base-button" id="burger">
+              <span class="main-nav__burger-line"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="modal" id="modal">
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <span class="modal__text">Ваша заявка отправлена!</span>
+          <button class="modal__close main-button base-button" id="modal_close">
+            <span class="main-button__text">Закрыть</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+<main class="page-content">
+
+  <section class="second-heading">
+  <div class="second-heading__container" style="background:url('img/image/blog-item-heading.jpg');background-size:cover;background-repeat:no-repeat;">
+    <div class="second-heading__wrapper">
+      <h1 class="second-heading__title base-title">Почему термопанели так популярны?</h1>
+      <div class="second-heading__breadcrumbs">
+        <a class="second-heading__breadcrumbs-home base-link" href="index.html">Главная</a>
+        <span class="second-heading__breadcrumbs-current">/ Почему термопанели так популярны?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="blog-item">
+    <div class="blog-item__container base-container">
+      <h2>Очень интересная новость</h2>
+      <p>
+        Противоположная точка зрения 
+        подразумевает, что диаграммы 
+        связей, которые представляют 
+        собой яркий пример 
+        континентально-европейского типа политической 
+        культуры, будут функционально 
+        разнесены на независимые элементы! 
+        Мы вынуждены отталкиваться от того, 
+        что современная методология разработки 
+        однозначно фиксирует необходимость 
+        вывода текущих активов
+      </p>
+      <p>
+        Противоположная точка зрения подразумевает, 
+        что диаграммы связей, которые представляют 
+        собой яркий пример континентально-европейского 
+        типа политической культуры, будут 
+        функционально разнесены на независимые 
+        элементы! Мы вынуждены отталкиваться от 
+        того, что современная методология разработки 
+        однозначно фиксирует необходимость вывода 
+        текущих активов
+      </p>
+      <img src="img/image/blog-item.jpg">
+      <h2>
+          Противоположная точка зрения подразумевает, 
+          что диаграммы связей, которые представляют 
+          собой яркий пример континентально-европейского 
+          типа политической культуры
+      </h2>
+      <p>
+        Фиксирует необходимость вывода текущих активов. 
+        Господа, начало повседневной работы по 
+        формированию позиции создаёт необходимость 
+        включения в производственный план целого ряда 
+        внеочередных мероприятий с учётом комплекса 
+        вывода текущих активов. 
+        Картельные сговоры не допускают ситуации, 
+        при которой независимые государства 
+        ассоциативно распределены по отраслям.
+      </p>
+      <h2>Вывод</h2>
+      <p>
+        Как принято считать, явные признаки 
+        победы институционализации, которые 
+        представляют собой яркий пример 
+        континентально-европейского типа политической 
+        культуры, будут ассоциативно 
+        распределены по отраслям. Не следует, 
+        однако, забывать, что реализация намеченных 
+        плановых заданий обеспечивает актуальность модели развития. 
+        Имеется спорная точка зрения, гласящая примерно 
+        следующее: диаграммы связей, инициированные 
+        исключительно синтетически, в равной степени 
+        предоставлены сами себе. А также ключевые особенности 
+        структуры проекта своевременно верифицированы.
+      </p>
+      <p>
+        Как принято считать, явные признаки 
+        победы институционализации, которые 
+        представляют собой яркий пример 
+        континентально-европейского типа политической 
+        культуры, будут ассоциативно 
+        распределены по отраслям. Не следует, 
+        однако, забывать, что реализация намеченных 
+        плановых заданий обеспечивает актуальность модели развития. 
+        Имеется спорная точка зрения, гласящая примерно 
+        следующее: диаграммы связей, инициированные 
+        исключительно синтетически, в равной степени 
+        предоставлены сами себе. А также ключевые особенности 
+        структуры проекта своевременно верифицированы.
+      </p>
+      <p>
+        Как принято считать, явные признаки 
+        победы институционализации, которые 
+        представляют собой яркий пример 
+        континентально-европейского типа политической 
+        культуры, будут ассоциативно 
+        распределены по отраслям. Не следует, 
+        однако, забывать, что реализация намеченных 
+        плановых заданий обеспечивает актуальность модели развития. 
+        Имеется спорная точка зрения, гласящая примерно 
+        следующее: диаграммы связей, инициированные 
+        исключительно синтетически, в равной степени 
+        предоставлены сами себе. А также ключевые особенности 
+        структуры проекта своевременно верифицированы.
+      </p>
+    </div>
+  </section>
+
+      <footer class="page-footer">
+      <section class="footer-main">
+        <div class="footer-main__container base-container">
+          <div class="footer-main__wrapper">
+            <span class="footer-main__label-top">Пишите нам в мессенджерах:</span>
+            <span class="footer-main__label-top">Помощь</span>
+            <span class="footer-main__label-top">Услуги</span>
+
+            <div class="footer-main__left-block">
+              <div class="footer-main__phone-block">
+                <a class="footer-main__phone-link blue-hover base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
+                <a class="footer-main__phone-link blue-hover base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
+              </div>
+  
+              <div class="footer-main__socials">
+                <a class="footer-main__socials-link base-link" href="#">
+                  <figure class="footer-main__socials-image base-figure">
+                    <img class="footer-main__socials-img" src="img/image/vk.png" width="40" height="40">
+                  </figure>
+                </a>
+                <a class="footer-main__socials-link base-link" href="#">
+                  <figure class="footer-main__socials-image base-figure">
+                    <img class="footer-main__socials-img" src="img/image/viber.png" width="40" height="40">
+                  </figure>
+                </a>
+                <a class="footer-main__socials-link base-link" href="#">
+                  <figure class="footer-main__socials-image base-figure">
+                    <img class="footer-main__socials-img" src="img/image/whatsapp.png" width="40" height="40">
+                  </figure>
+                </a>
+              </div>
+  
+              <a class="footer-main__email blue-hover base-link" href="tel:info@gmail.com">info@gmail.com</a>
+            </div>
+  
+            <ul class="footer-main__nav-list base-list">
+              <li class="footer-main__nav-item">
+                <a class="footer-main__nav-link blue-hover base-link" href="index.html#faq">Популярные вопросы</a>
+              </li>
+              <li class="footer-main__nav-item">
+                <a class="footer-main__nav-link blue-hover base-link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="footer-main__nav-item">
+                <a class="footer-main__nav-link blue-hover base-link" href="index.html">Главная</a>
+              </li>
+            </ul>
+            
+            <ul class="footer-main__nav-list base-list">
+              <li class="footer-main__nav-item">
+                <a class="footer-main__nav-link blue-hover base-link" href="services.html">Услуги</a>
+              </li>
+              <li class="footer-main__nav-item">
+                <a class="footer-main__nav-link blue-hover base-link" href="about.html">О компании</a>
+              </li>
+              <li class="footer-main__nav-item">
+                <a class="footer-main__nav-link blue-hover base-link" href="archive.html">Блог</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="footer-underline">
+        <div class="footer-underline__container base-container">
+          <span class="footer-underline__copyright">© Панели</span>
+          <a class="footer-underline__policy base-link" href="#">Политика конфеденциальности</a>
+          <a class="footer-underline__isart-link base-link" href="#">
+            <span class="footer-underline__isart-text">Разработано</span>
+            <svg class="footer-underline__logo-icon" width="52" height="22" alt="#">
+              <use href="img/icon/sprite.svg#isart-logo-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/index.min.js"></script>
+  </body>
+
+</html>

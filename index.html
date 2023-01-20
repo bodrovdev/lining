@@ -30,13 +30,13 @@
                 </span>
               </div>
               <div class="main-nav__top-contacts">
-                <a class="main-nav__top-link blue-line-hover base-link" href="mailto:info@gmail.com">
+                <a class="main-nav__top-link blue-hover base-link" href="mailto:info@gmail.com">
                   <svg class="main-nav__link-icon main-nav__top-item-icon" width="16" height="16" alt="Иконка почты">
                     <use href="img/icon/sprite.svg#email-icon"></use>
                   </svg>
                   <span class="main-nav__work-text main-nav__top-item-text">info@gmail.com</span>
                 </a>
-                <a class="main-nav__top-link blue-line-hover base-link" href="tel:+70000000000">
+                <a class="main-nav__top-link blue-hover base-link" href="tel:+70000000000">
                   <svg class="main-nav__link-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка телефона">
                     <use href="img/icon/sprite.svg#phone-icon"></use>
                   </svg>
@@ -85,13 +85,13 @@
                     </span>
                   </div>
                   <div class="main-nav__top-contacts">
-                    <a class="main-nav__top-link blue-line-hover base-link" href="mailto:info@gmail.com">
+                    <a class="main-nav__top-link blue-hover base-link" href="mailto:info@gmail.com">
                       <svg class="main-nav__link-icon main-nav__top-item-icon" width="16" height="16" alt="Иконка почты">
                         <use href="img/icon/sprite.svg#email-icon"></use>
                       </svg>
                       <span class="main-nav__work-text main-nav__top-item-text">info@gmail.com</span>
                     </a>
-                    <a class="main-nav__top-link blue-line-hover base-link" href="tel:+70000000000">
+                    <a class="main-nav__top-link blue-hover base-link" href="tel:+70000000000">
                       <svg class="main-nav__link-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка телефона">
                         <use href="img/icon/sprite.svg#phone-icon"></use>
                       </svg>
@@ -109,6 +109,17 @@
         </div>
       </nav>
     </header>
+
+    <div class="modal" id="modal">
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <span class="modal__text">Ваша заявка отправлена!</span>
+          <button class="modal__close main-button base-button" id="modal_close">
+            <span class="main-button__text">Закрыть</span>
+          </button>
+        </div>
+      </div>
+    </div>
 	<main class="page-content">
 		<section class="index-heading">
 			<div class="index-heading__container base-container">
@@ -209,7 +220,7 @@
 					Хотите получить бесплатный<br> образец?
 				</h2>
 				<span class="index-sampleForm__subtitle">Предоставляем бесплатный образец панелей.</span>
-				<form class="index-sampleForm__form">
+				<form class="index-sampleForm__form" id="form1" name="sample_form">
 					<div class="index-sampleForm__formset">
 						<input type="tel" class="index-sampleForm__input" placeholder="Введите номер телефона" required>
 						<button class="index-sampleForm__submit main-button base-button">
@@ -405,7 +416,7 @@
 			<section class="faq__container base-container">
 				<h2 class="faq__title section-title base-title">Часто задаваемые вопросы</h2>
 				<div class="faq__wrapper">
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-1"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-1">
@@ -423,7 +434,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-2"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-2">
@@ -441,7 +452,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-3"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-3">	
@@ -459,7 +470,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-4"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-4">
@@ -477,7 +488,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-5"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-5">
@@ -504,31 +515,31 @@
 				<h2 class="index-services__title section-title base-title">Услуги которые<br>мы предоставляем</h2>
 				<div class="index-services__wrapper">
 					<div class="index-services__item" style="background:url('img/image/index-serv-1.jpg');background-size:cover;background-repeat:no-repeat;">
-						<div class="index-services__item-inner">
+						<a class="index-services__item-inner base-link" href="services.html">
 							<span class="index-services__item-num">01</span>
 							<h3 class="index-services__item-title base-title">Продажа и доставка панелей</h3>
 							<p class="index-services__item-text base-par">
 								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
 							</p>
-						</div>
+						</a>
 					</div>
 					<div class="index-services__item" style="background:url('img/image/index-serv-2.jpg');background-size:cover;background-repeat:no-repeat;">
-						<div class="index-services__item-inner">
+						<a class="index-services__item-inner base-link" href="services.html">
 							<span class="index-services__item-num">02</span>
 							<h3 class="index-services__item-title base-title">Замер и консультация на участке</h3>
 							<p class="index-services__item-text base-par">
 								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
 							</p>
-						</div>
+						</a>
 					</div>
 					<div class="index-services__item" style="background:url('img/image/index-serv-3.jpg');background-size:cover;background-repeat:no-repeat;">
-						<div class="index-services__item-inner">
+						<a class="index-services__item-inner base-link" href="services.html">
 							<span class="index-services__item-num">03</span>
 							<h3 class="index-services__item-title base-title">Монтаж панелей </h3>
 							<p class="index-services__item-text base-par">
 								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
 							</p>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -541,40 +552,48 @@
 					<div class="index-blogSlider__slider swiper">
 						<div class="index-blogSlider__slider-wrapper swiper-wrapper">
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-1.jpg');background-size:cover;background-repeat:no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-2.jpg');background-size:cover;background-repeat:no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-3.jpg');background-size: cover;background-repeat: no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-4.jpg');background-size: cover;background-repeat: no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -609,7 +628,7 @@
       <span class="feedbackForm__subtitle">
         Бесплатно проконсультируем  и расскажем все о термопанелях!
       </span>
-      <form class="feedbackForm__form" name="feedback_form">
+      <form class="feedbackForm__form" id="form2" name="feedback_form">
         <input class="feedbackForm__input" type="tel" required placeholder="+ 7 (000) 000-00-00" id="feedback_form_phone" name="feedback_form_phone">
         <label class="feedbackForm__checkbox-label" for="feedback_form_checkbox">
           <input class="feedbackForm__checkbox" type="checkbox" id="feedback_form_checkbox" checked required>
@@ -636,8 +655,8 @@
     <div class="map__contacts-container base-container">
       <div class="map__contacts-inner">
         <h3 class="map__contacts-title base-title">Наши контакты</h3>
-        <a class="map__contacts-phone base-link" href="tel:">8 (000) 000-00-00</a>
-        <a class="map__contacts-email base-link" href="mailto:">info@gmail.com</a>
+        <a class="map__contacts-phone blue-hover base-link" href="tel:">8 (000) 000-00-00</a>
+        <a class="map__contacts-email blue-hover base-link" href="mailto:">info@gmail.com</a>
         <p class="map__contacts-address base-par">
           г. Орехово-Зуево,<br> ул.Воровского, д.13 пр.6
         </p>
@@ -682,8 +701,8 @@
 
             <div class="footer-main__left-block">
               <div class="footer-main__phone-block">
-                <a class="footer-main__phone-link base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
-                <a class="footer-main__phone-link base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
+                <a class="footer-main__phone-link blue-hover base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
+                <a class="footer-main__phone-link blue-hover base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
               </div>
   
               <div class="footer-main__socials">
@@ -704,30 +723,30 @@
                 </a>
               </div>
   
-              <a class="footer-main__email base-link" href="tel:info@gmail.com">info@gmail.com</a>
+              <a class="footer-main__email blue-hover base-link" href="tel:info@gmail.com">info@gmail.com</a>
             </div>
   
             <ul class="footer-main__nav-list base-list">
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="index.html#faq">Популярные вопросы</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="index.html#faq">Популярные вопросы</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="contacts.html">Контакты</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="contacts.html">Контакты</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="index.html">Главная</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="index.html">Главная</a>
               </li>
             </ul>
             
             <ul class="footer-main__nav-list base-list">
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="services.html">Услуги</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="services.html">Услуги</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="about.html">О компании</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="about.html">О компании</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="archive.html">Блог</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="archive.html">Блог</a>
               </li>
             </ul>
           </div>

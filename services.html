@@ -30,13 +30,13 @@
                 </span>
               </div>
               <div class="main-nav__top-contacts">
-                <a class="main-nav__top-link blue-line-hover base-link" href="mailto:info@gmail.com">
+                <a class="main-nav__top-link blue-hover base-link" href="mailto:info@gmail.com">
                   <svg class="main-nav__link-icon main-nav__top-item-icon" width="16" height="16" alt="Иконка почты">
                     <use href="img/icon/sprite.svg#email-icon"></use>
                   </svg>
                   <span class="main-nav__work-text main-nav__top-item-text">info@gmail.com</span>
                 </a>
-                <a class="main-nav__top-link blue-line-hover base-link" href="tel:+70000000000">
+                <a class="main-nav__top-link blue-hover base-link" href="tel:+70000000000">
                   <svg class="main-nav__link-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка телефона">
                     <use href="img/icon/sprite.svg#phone-icon"></use>
                   </svg>
@@ -85,13 +85,13 @@
                     </span>
                   </div>
                   <div class="main-nav__top-contacts">
-                    <a class="main-nav__top-link blue-line-hover base-link" href="mailto:info@gmail.com">
+                    <a class="main-nav__top-link blue-hover base-link" href="mailto:info@gmail.com">
                       <svg class="main-nav__link-icon main-nav__top-item-icon" width="16" height="16" alt="Иконка почты">
                         <use href="img/icon/sprite.svg#email-icon"></use>
                       </svg>
                       <span class="main-nav__work-text main-nav__top-item-text">info@gmail.com</span>
                     </a>
-                    <a class="main-nav__top-link blue-line-hover base-link" href="tel:+70000000000">
+                    <a class="main-nav__top-link blue-hover base-link" href="tel:+70000000000">
                       <svg class="main-nav__link-icon main-nav__top-item-icon" width="14" height="14" alt="Иконка телефона">
                         <use href="img/icon/sprite.svg#phone-icon"></use>
                       </svg>
@@ -109,6 +109,17 @@
         </div>
       </nav>
     </header>
+
+    <div class="modal" id="modal">
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <span class="modal__text">Ваша заявка отправлена!</span>
+          <button class="modal__close main-button base-button" id="modal_close">
+            <span class="main-button__text">Закрыть</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
 <main class="page-content">
 
@@ -198,7 +209,7 @@
       <span class="feedbackForm__subtitle">
         Бесплатно проконсультируем  и расскажем все о термопанелях!
       </span>
-      <form class="feedbackForm__form" name="feedback_form">
+      <form class="feedbackForm__form" id="form2" name="feedback_form">
         <input class="feedbackForm__input" type="tel" required placeholder="+ 7 (000) 000-00-00" id="feedback_form_phone" name="feedback_form_phone">
         <label class="feedbackForm__checkbox-label" for="feedback_form_checkbox">
           <input class="feedbackForm__checkbox" type="checkbox" id="feedback_form_checkbox" checked required>
@@ -225,8 +236,8 @@
     <div class="map__contacts-container base-container">
       <div class="map__contacts-inner">
         <h3 class="map__contacts-title base-title">Наши контакты</h3>
-        <a class="map__contacts-phone base-link" href="tel:">8 (000) 000-00-00</a>
-        <a class="map__contacts-email base-link" href="mailto:">info@gmail.com</a>
+        <a class="map__contacts-phone blue-hover base-link" href="tel:">8 (000) 000-00-00</a>
+        <a class="map__contacts-email blue-hover base-link" href="mailto:">info@gmail.com</a>
         <p class="map__contacts-address base-par">
           г. Орехово-Зуево,<br> ул.Воровского, д.13 пр.6
         </p>
@@ -271,8 +282,8 @@
 
             <div class="footer-main__left-block">
               <div class="footer-main__phone-block">
-                <a class="footer-main__phone-link base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
-                <a class="footer-main__phone-link base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
+                <a class="footer-main__phone-link blue-hover base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
+                <a class="footer-main__phone-link blue-hover base-link" href="tel:+7000000000">7 (000) 00-00-00</a>
               </div>
   
               <div class="footer-main__socials">
@@ -293,30 +304,30 @@
                 </a>
               </div>
   
-              <a class="footer-main__email base-link" href="tel:info@gmail.com">info@gmail.com</a>
+              <a class="footer-main__email blue-hover base-link" href="tel:info@gmail.com">info@gmail.com</a>
             </div>
   
             <ul class="footer-main__nav-list base-list">
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="index.html#faq">Популярные вопросы</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="index.html#faq">Популярные вопросы</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="contacts.html">Контакты</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="contacts.html">Контакты</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="index.html">Главная</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="index.html">Главная</a>
               </li>
             </ul>
             
             <ul class="footer-main__nav-list base-list">
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="services.html">Услуги</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="services.html">Услуги</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="about.html">О компании</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="about.html">О компании</a>
               </li>
               <li class="footer-main__nav-item">
-                <a class="footer-main__nav-link base-link" href="archive.html">Блог</a>
+                <a class="footer-main__nav-link blue-hover base-link" href="archive.html">Блог</a>
               </li>
             </ul>
           </div>
