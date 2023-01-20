@@ -30,7 +30,7 @@ let projects_slider = new Swiper('.index-projectSlider__slider', {
   slidesPerView: "auto",
   centeredSlides: true,
   initialSlide: 1,
-  // loop: true,
+  loop: true,
   speed: 700,
 
   navigation: {
@@ -75,6 +75,8 @@ let blog_slider = new Swiper('.index-blogSlider__slider', {
 let about_project_slider = new Swiper('.about-projectSlider__slider', {
   spaceBetween: 25,
   slidesPerView: "auto",
+  loop: true,
+  speed: 700,
 
   navigation: {
     nextEl: ".about-projectSlider__arrow--next",

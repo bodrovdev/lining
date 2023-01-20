@@ -52,6 +52,12 @@
     }
   }
 
+  & .blue-hover:hover {
+    & svg {
+      filter: inherit;
+    }
+  }
+
   &__isart-link {
     display: flex;
     align-items: center;

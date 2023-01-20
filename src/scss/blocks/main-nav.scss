@@ -134,6 +134,12 @@
 
   &__top-contacts {
     display: flex;
+
+    & .blue-hover {
+      & svg {
+        filter: inherit;
+      }
+    }
   }
 
   &__top-link {

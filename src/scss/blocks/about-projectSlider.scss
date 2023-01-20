@@ -39,7 +39,7 @@
 
   &__slider-block {
     display: flex;
-    align-items: flex-end;
+    align-items: stretch;
 
     @include mixins.respond-to(mobileOnly) {
       flex-direction: column;

@@ -61,7 +61,7 @@
     flex-direction: column;
     
     box-sizing: border-box;
-    border: 1px solid var(--color-black);
+    border: 1px solid #c0c0c0;
 
     @include mixins.respond-to(mobileOnly) {
       margin: 0 0 20px 0;
@@ -119,16 +119,33 @@
     margin: 0 0 15px 0;
   }
 
-  &__date-icon {
-    margin: 0 10px 0 0;
-  }
+  // &__date-icon {
+  //   margin: 0 10px 0 0;
+  // }
 
   &__date-text {
+    position: relative;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: var(--color-scorpion);
+
+    padding: 0 0 0 23px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      width: 13px;
+      height: 13px;
+      background: url(../img/image/blog-time-icon.svg);
+      background-size: 13px 13px;
+      background-repeat: no-repeat;
+    }
   }
 
   &__learnmore {
