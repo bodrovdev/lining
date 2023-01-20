@@ -84,6 +84,8 @@
 
     &-phone {
       display: inline-block;
+      
+      width: fit-content;
 
       pointer-events: all;
 
@@ -115,10 +117,14 @@
     &-email {
       position: relative;
 
+      display: inline-block;
+      
+      width: fit-content;
+
       padding: 0 0 10px 0;
       margin: 0 0 10px 0;
 
-      &::before {
+      &::after {
         content: "";
         position: absolute;
         bottom: 0;

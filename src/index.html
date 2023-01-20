@@ -100,7 +100,7 @@
 					Хотите получить бесплатный<br> образец?
 				</h2>
 				<span class="index-sampleForm__subtitle">Предоставляем бесплатный образец панелей.</span>
-				<form class="index-sampleForm__form">
+				<form class="index-sampleForm__form" id="form1" name="sample_form">
 					<div class="index-sampleForm__formset">
 						<input type="tel" class="index-sampleForm__input" placeholder="Введите номер телефона" required>
 						<button class="index-sampleForm__submit main-button base-button">
@@ -296,7 +296,7 @@
 			<section class="faq__container base-container">
 				<h2 class="faq__title section-title base-title">Часто задаваемые вопросы</h2>
 				<div class="faq__wrapper">
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-1"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-1">
@@ -314,7 +314,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-2"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-2">
@@ -332,7 +332,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-3"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-3">	
@@ -350,7 +350,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-4"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-4">
@@ -368,7 +368,7 @@
 							целесообразности принимаемых решений. И нет сомнений,
 						</div>
 					</div>
-					<div class="faq__spoilers-item">
+					<div class="faq__spoilers-item blue-hover">
 						<input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-5"
 							name="about-spoilers">
 						<label class="faq__spoilers-button" for="spoilers-check-5">
@@ -395,31 +395,31 @@
 				<h2 class="index-services__title section-title base-title">Услуги которые<br>мы предоставляем</h2>
 				<div class="index-services__wrapper">
 					<div class="index-services__item" style="background:url('img/image/index-serv-1.jpg');background-size:cover;background-repeat:no-repeat;">
-						<div class="index-services__item-inner">
+						<a class="index-services__item-inner base-link" href="services.html">
 							<span class="index-services__item-num">01</span>
 							<h3 class="index-services__item-title base-title">Продажа и доставка панелей</h3>
 							<p class="index-services__item-text base-par">
 								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
 							</p>
-						</div>
+						</a>
 					</div>
 					<div class="index-services__item" style="background:url('img/image/index-serv-2.jpg');background-size:cover;background-repeat:no-repeat;">
-						<div class="index-services__item-inner">
+						<a class="index-services__item-inner base-link" href="services.html">
 							<span class="index-services__item-num">02</span>
 							<h3 class="index-services__item-title base-title">Замер и консультация на участке</h3>
 							<p class="index-services__item-text base-par">
 								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
 							</p>
-						</div>
+						</a>
 					</div>
 					<div class="index-services__item" style="background:url('img/image/index-serv-3.jpg');background-size:cover;background-repeat:no-repeat;">
-						<div class="index-services__item-inner">
+						<a class="index-services__item-inner base-link" href="services.html">
 							<span class="index-services__item-num">03</span>
 							<h3 class="index-services__item-title base-title">Монтаж панелей </h3>
 							<p class="index-services__item-text base-par">
 								Учитывая ключевые сценарии поведения, внедрение современных методик создаёт необходимость
 							</p>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -432,40 +432,48 @@
 					<div class="index-blogSlider__slider swiper">
 						<div class="index-blogSlider__slider-wrapper swiper-wrapper">
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-1.jpg');background-size:cover;background-repeat:no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-2.jpg');background-size:cover;background-repeat:no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-3.jpg');background-size: cover;background-repeat: no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 							<div class="index-blogSlider__slider-slide swiper-slide" style="background:url('img/image/blog-slide-4.jpg');background-size: cover;background-repeat: no-repeat;">
-								<div class="index-blogSlider__slide-inner">
-									<span class="index-blogSlider__slide-time">12/01/2023</span>
-									<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
-									<p class="index-blogSlider__slide-text base-par">
-										Проект “Дымовая поэзия” Разработка фирменного стиля...
-									</p>
-								</div>
+								<a class="index-blogSlider__link base-link" href="single.html">
+									<div class="index-blogSlider__slide-inner">
+										<span class="index-blogSlider__slide-time">12/01/2023</span>
+										<h3 class="index-blogSlider__slide-title base-title">Заголовок</h3>
+										<p class="index-blogSlider__slide-text base-par">
+											Проект “Дымовая поэзия” Разработка фирменного стиля...
+										</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

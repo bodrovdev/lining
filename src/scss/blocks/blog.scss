@@ -57,6 +57,9 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    
     box-sizing: border-box;
     border: 1px solid var(--color-black);
 
@@ -131,6 +134,12 @@
   &__learnmore {
     display: flex;
     align-items: center;
+
+    width: fit-content;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 100%;
+    }
 
     &-text {
       display: inline-block;

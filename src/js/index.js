@@ -44,3 +44,43 @@ spoilers.forEach((element) => {
     }
   })
 })
+
+// Модальное окно с подтверждением оплаты
+window.addEventListener('load', () => {
+  if (document.getElementById('form1') === null || document.getElementById('form1') === null) {
+    return;
+  }
+  else {
+    let form1 = document.getElementById('form1');
+    let form2 = document.getElementById('form2');
+    let modal = document.getElementById('modal');
+    let modal_close = document.getElementById('modal_close');
+
+    form1.addEventListener('submit', (e) => {
+      e.preventDefault();
+      modal.classList.add('modal--active');
+      disableBodyScroll(modal);
+    })
+
+    form2.addEventListener('submit', (e) => {
+      e.preventDefault();
+      modal.classList.add('modal--active');
+      disableBodyScroll(modal);
+    })
+
+    modal_close.addEventListener('click', () => {
+      modal.classList.remove('modal--active');
+      enableBodyScroll(modal);
+    })
+
+    modal.addEventListener('click', (e) => {
+      if (e.target !== e.currentTarget) {
+        return;
+      }
+      else {
+        modal.classList.remove('modal--active');
+        enableBodyScroll(modal);
+      }
+    })
+  }
+});

@@ -10,7 +10,17 @@
 
   transition: color 0.3s;
 
+  padding: 3px;
+
   z-index: 2;
+
+  & span, div {
+    transition: color 0.3s;
+  }
+
+  & svg {
+    transition: filter 0.3s;
+  }
 
   &::before {
     content: "";
@@ -20,10 +30,9 @@
     
     width: 100%;
     height: 100%;
-    // background-color: var(--color-wedgewood);
     background-color: var(--color-fountain-blue);
 
-    transform: translateX(-101%);
+    transform: translateX(-105%);
     transition: transform 0.3s;
 
     z-index: -1;
@@ -31,10 +40,27 @@
 
   @include mixins.respond-to(desktopS) {
     &:hover {
-      // color: var(--color-white);
+      color: var(--color-white);
       
-      // transition: color;
+      transition: color;
     }
+
+    &:hover {
+      color: var(--color-white);
+      
+      transition: color;
+
+      & span, div {
+        color: var(--color-white);
+      
+        transition: color;
+      }
+
+      & svg {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(7deg) brightness(101%) contrast(105%);
+      }
+    }
+
     &:hover::before {
       transform: translateX(0);
       transition: transform 0.3s;
